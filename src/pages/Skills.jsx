@@ -18,6 +18,7 @@ function Skills() {
         <ServiceItem Name='Tailwind' />
         <ServiceItem Name='Javascript' />
         <ServiceItem Name='PrimeFaces' />
+        <ServiceItem Name='MySql' />
       </div>
       <Scroll selector='#service' bottom='0' />
     </div>

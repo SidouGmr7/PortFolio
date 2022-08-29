@@ -1,5 +1,6 @@
 import { FaReact, FaAngular, FaPaintBrush } from 'react-icons/fa'
 import { SiJavascript, SiFirebase, SiTailwindcss } from 'react-icons/si'
+import { GrMysql } from 'react-icons/gr'
 import { BsCodeSlash } from 'react-icons/bs'
 import { FiDatabase } from 'react-icons/fi'
 import { AiOutlineDesktop } from 'react-icons/ai'
@@ -24,15 +25,10 @@ const ServiceItem = ({ Name, About }) => {
           Angular: <FaAngular className='  text-rose-800 mx-auto text-4xl' />,
           React: <FaReact color='#2196f3' className='mx-auto text-4xl ' />,
           Firebase: <SiFirebase color='orange' className='mx-auto text-4xl' />,
-          Tailwind: (
-            <SiTailwindcss color='#00C0A3' className='mx-auto text-4xl' />
-          ),
-          Javascript: (
-            <SiJavascript color='#ffdf00' className='mx-auto text-4xl' />
-          ),
-          PrimeFaces: (
-            <i className='pi pi-prime mx-auto text-4xl text-blue-400'></i>
-          ),
+          Tailwind: <SiTailwindcss color='#00C0A3' className='mx-auto text-4xl' />,
+          Javascript:<SiJavascript color='#ffdf00' className='mx-auto text-4xl' />,
+          PrimeFaces: <i className='pi pi-prime mx-auto text-4xl text-blue-400'></i>,
+          MySql:<GrMysql className='mx-auto text-4xl text-blue-900' />,
           FrontEnd: <AiOutlineDesktop className='mx-auto text-4xl' />,
           BackEnd: <BsCodeSlash className='mx-auto text-4xl' />,
           'Ui UX Design': <FaPaintBrush className='mx-auto text-4xl' />,

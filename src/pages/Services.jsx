@@ -4,7 +4,7 @@ import ServiceItem from '../components/ServiceItem'
 const Services = () => {
   return (
     <div
-      className='relative max-w-4xl md:h-screen mx-auto  py-28'
+      className='relative max-w-4xl sm:h-screen mx-auto  py-28'
       id='service'>
       <p className='text-2xl text-rose-600 md:text-4xl font-bold text-center pt-4'>
         My Services

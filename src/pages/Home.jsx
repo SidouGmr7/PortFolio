@@ -8,13 +8,13 @@ const home = () => {
   return (
     <div
       style={{ backgroundImage: `url(${BG})` }}
-      className='bg-fixed h-screen md:p-52 p-32'
+      className='bg-fixed h-screen md:p-52 p-20'
       id='home'>
       <motion.div
         initial={{ opacity: 0, x: 200 }}
         animate={{ opacity: 1, x: 0 }}
         exit={{ opacity: 0, x: 200 }}
-        className='fixed space-y-10 md:space-x-80 py-20'>
+        className='fixed space-y-10 md:space-x-80 py-48 '>
         <div className='space-x-10 space-y-4'>
           <h1 className=' md:text-6xl text-4xl justify-center text-white'>
             <span className='text-rose-600'>G</span>oumiri{' '}

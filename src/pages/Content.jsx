@@ -10,7 +10,7 @@ const Content = () => {
 
   return (
     <div
-      className={`py-10 sm:px-5 bg-white-100 overflow-hidden duration-500 transition-all ease-in-out dark ${
+      className={`py-10 sm:px-5 bg-white-100 overflow-hidden dark ${
         dark ? 'bg-gray-900' : 'bg-gradient-to-r from-slate-200 to-cyan-50'
       }`}>
       <CardProfile />
