@@ -7,14 +7,14 @@ export default function ContactMe() {
 
   return (
     <div
-      className='max-w-lg w-full  text-center m-auto pt-72 pb-40 justify-center items-center'
+      className='max-w-lg md:h-screen text-center m-auto md:py-72 py-52'
       id='contact'>
-      <h1 className={`text-4xl ${dark && 'text-white'}`}>
+      <h1 className={`md:text-4xl ${dark && 'text-white'}`}>
         Interested in working together?
       </h1>
       <a
         href='mailto:goumirisidali@hotmail.com'
-        className={`flex hover:scale-105 duration-200 bg-rose-600 transition-all ease-in-out items-center justify-center mt-10 ml-40 w-48  md:text-xl py-4 px-5 cursor-pointer ${
+        className={`flex hover:scale-105 duration-200 bg-rose-600 transition-all ease-in-out items-center justify-center mt-10 ml-40 md:w-48 w-40 md:text-xl md:p-4 p-2 rounded-sm  cursor-pointer ${
           dark ? ' text-white' : ' text-black'
         }`}>
         <span className='mr-3 '>Get in touch</span>

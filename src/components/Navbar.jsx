@@ -13,7 +13,7 @@ const Navbar = () => {
       <div className='md:flex w-full h-full items-center justify-between'>
         <div className='flex items-center justify-center'>
           <div
-            className={`text-xl m-1 p-1 sm:m-2 sm:p-2 rounded-full transition ${
+            className={`md:text-xl m-1 p-1 sm:m-2 sm:p-2 rounded-full transition ${
               dark
                 ? 'text-white hover:bg-white hover:text-black '
                 : 'text-black hover:bg-black hover:text-white'
@@ -22,12 +22,9 @@ const Navbar = () => {
             <FiSun />
           </div>
           <div className='flex items-center gap-2'>
-            <p
-              className={` text-xl ${
-                dark && 'text-white'
-              }`}>
+            <p className={`md:text-xl ${dark && 'text-white'}`}>
               MY {''}
-               <span className='text-rose-600 font-bold'>P</span>ORT
+              <span className='text-rose-600 font-bold'>P</span>ORT
               <span className='text-rose-600 font-bold'>F</span>OLIO
             </p>
           </div>
