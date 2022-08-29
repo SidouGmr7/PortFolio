@@ -14,7 +14,7 @@ const home = () => {
         initial={{ opacity: 0, x: 200 }}
         animate={{ opacity: 1, x: 0 }}
         exit={{ opacity: 0, x: 200 }}
-        className='fixed space-y-10 md:space-x-80 py-48 '>
+        className='fixed space-y-10 md:space-x-80 py-48 md:py-4 '>
         <div className='space-x-10 space-y-4'>
           <h1 className=' md:text-6xl text-4xl justify-center text-white'>
             <span className='text-rose-600'>G</span>oumiri{' '}

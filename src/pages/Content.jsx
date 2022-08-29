@@ -15,8 +15,8 @@ const Content = () => {
         dark ? 'bg-gray-900' : 'bg-gradient-to-r from-slate-200 to-cyan-50'
       }`}>
       <CardProfile />
-      <Skills />
       <Services />
+      <Skills />
       <ContactMe />
     </div>
   )
