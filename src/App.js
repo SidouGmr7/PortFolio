@@ -12,7 +12,10 @@ function App() {
       <div className='z-10 relative'>
         <Content />
       </div>
-      <Footer />
+      <div className='z-10 relative'>
+        <Footer />
+      </div>
+   
     </DarkModeProvider>
   )
 }

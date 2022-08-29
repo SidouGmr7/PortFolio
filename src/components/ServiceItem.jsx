@@ -1,4 +1,4 @@
-import { FaReact, FaAngular, FaPaintBrush } from 'react-icons/fa'
+import { FaReact, FaAngular, FaPaintBrush, FaPython } from 'react-icons/fa'
 import { SiJavascript, SiFirebase, SiTailwindcss } from 'react-icons/si'
 import { GrMysql } from 'react-icons/gr'
 import { BsCodeSlash } from 'react-icons/bs'
@@ -29,6 +29,8 @@ const ServiceItem = ({ Name, About }) => {
           Javascript:<SiJavascript color='#ffdf00' className='mx-auto text-4xl' />,
           PrimeFaces: <i className='pi pi-prime mx-auto text-4xl text-blue-400'></i>,
           MySql:<GrMysql className='mx-auto text-4xl text-blue-900' />,
+          Python:<FaPython className='mx-auto text-4xl text-yellow-600' />,
+           
           FrontEnd: <AiOutlineDesktop className='mx-auto text-4xl' />,
           BackEnd: <BsCodeSlash className='mx-auto text-4xl' />,
           'Ui UX Design': <FaPaintBrush className='mx-auto text-4xl' />,
