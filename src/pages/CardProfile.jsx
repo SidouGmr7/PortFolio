@@ -88,7 +88,7 @@ function Card() {
           </div>
         </div>
       </div>
-      <Scroll selector='#tech' bottom='0' />
+      <Scroll selector='#service' bottom='0' />
     </div>
   )
 }

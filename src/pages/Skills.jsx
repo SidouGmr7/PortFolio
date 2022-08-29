@@ -21,7 +21,7 @@ function Skills() {
         <ServiceItem Name='MySql' />
         <ServiceItem Name='Python' />
       </div>
-      <Scroll selector='#service' bottom='0' />
+      <Scroll selector='#contact' bottom='0' />
     </div>
   )
 }

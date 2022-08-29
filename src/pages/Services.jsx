@@ -27,7 +27,7 @@ const Services = () => {
           About='Manage DataBase with MySql or Firestore DatBase'
         />
       </div>
-      <Scroll selector='#contact' bottom='0' />
+      <Scroll selector='#tech' bottom='0' />
     </div>
   )
 }
