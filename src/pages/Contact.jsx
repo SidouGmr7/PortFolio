@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import { useContext } from 'react'
 import { FaArrowRight } from 'react-icons/fa'
 import DarkMode from '../context/DarkMode'
@@ -6,7 +7,9 @@ export default function ContactMe() {
   const { dark } = useContext(DarkMode)
 
   return (
-    <div
+    <motion.div
+      animate={{ x: 200 }}
+      whileInView={{ x: 0 }}
       className='max-w-lg md:h-screen text-center m-auto md:py-72 py-52'
       id='contact'>
       <h1 className={`md:text-4xl ${dark && 'text-white'}`}>
@@ -20,6 +23,6 @@ export default function ContactMe() {
         <span className='mr-3 '>Get in touch</span>
         <FaArrowRight color={`${dark ? 'white' : 'black'}`} />
       </a>
-    </div>
+    </motion.div>
   )
 }

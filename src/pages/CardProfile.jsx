@@ -9,8 +9,11 @@ function Card() {
 
   return (
     <div className='relative w-full h-screen pt-44' id='profile'>
+      <p className='text-2xl text-rose-600 md:text-4xl font-bold text-center pb-20'>
+        Profile
+      </p>
       <div
-        className={` md:max-w-lg max-w-xs mx-auto shadow-2xl  rounded-xl p-10 hover:scale-110 duration-500 transition-all ease-in-out ${
+        className={` md:max-w-lg max-w-xs mx-auto shadow-2xl  rounded-xl p-10  hover:scale-110 duration-500 transition-all ease-in-out ${
           dark
             ? 'bg-gradient-to-t from-slate-800 to-slate-500'
             : 'bg-gradient-to-r from-slate-200 to-blue-200 '

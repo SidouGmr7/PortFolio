@@ -39,7 +39,7 @@ const Navbar = () => {
             <NavbarItem Name='About' Selector='#profile' dark={dark} />
             <NavbarItem Name='Skills' Selector='#tech' dark={dark} />
             <NavbarItem Name='Service' Selector='#service' dark={dark} />
-
+            <NavbarItem Name='Project' Selector='#projects' dark={dark} />
             <NavbarItem Name='Contact' Selector='#contact' dark={dark} />
           </motion.ul>
           <div className='relative'>
