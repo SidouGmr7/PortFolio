@@ -1,7 +1,6 @@
 import 'primeicons/primeicons.css'
 import { motion } from 'framer-motion'
-import { useContext } from 'react'
-import DarkMode from '../context/DarkMode'
+
 import {
   FaGithub,
   FaFacebook,
@@ -12,7 +11,6 @@ import {
 } from 'react-icons/fa'
 
 const SocialItem = ({ name, href, Color }) => {
-  const { dark } = useContext(DarkMode)
   return (
     <motion.a
       whileHover={{ scale: 1.1 }}

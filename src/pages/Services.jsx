@@ -4,12 +4,12 @@ import ServiceItem from '../components/ServiceItem'
 const Services = () => {
   return (
     <div
-      className='relative max-w-4xl sm:h-screen mx-auto  py-28'
+      className='relative max-w-4xl lg:h-screen mx-auto  py-28'
       id='service'>
       <p className='text-2xl text-rose-600 md:text-4xl font-bold text-center pt-4'>
         My Services
       </p>
-      <div className='grid xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 justify-center pt-10'>
+      <div className='grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 justify-center pt-10'>
         <ServiceItem
           Name='FrontEnd'
           About='Create Web Application using React or Angular framework'
