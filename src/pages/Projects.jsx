@@ -21,7 +21,7 @@ const Projects = () => {
         />
         <ProjectCart
           img={Kanaghaz}
-          url='https://kanaghazdemo-bc29d.web.app'
+          url='https://kanaghazdemo-bc29d.firebaseapp.com'
           github='https://github.com/SidouGmr7/ControleInvestissement'
         />
         <ProjectCart

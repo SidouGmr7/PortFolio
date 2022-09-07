@@ -1,6 +1,9 @@
 import ScrollIntoView from 'react-scroll-into-view'
 
 const NavbarItem = ({ Selector, Name, dark }) => {
+
+  
+  
   return (
     <ScrollIntoView selector={Selector}>
       <li
