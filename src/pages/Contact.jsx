@@ -10,7 +10,7 @@ export default function ContactMe() {
     <motion.div
       animate={{ x: 200 }}
       whileInView={{ x: 0 }}
-      className='max-w-lg md:h-screen text-center m-auto md:py-72 py-52'
+      className='transition max-w-lg md:h-screen text-center m-auto md:py-72 py-52'
       id='contact'>
       <h1 className={`md:text-4xl ${dark && 'text-white'}`}>
         Interested in working together?

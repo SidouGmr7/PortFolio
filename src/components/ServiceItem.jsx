@@ -17,7 +17,7 @@ const ServiceItem = ({ Name, About }) => {
       animate={{ x: 200 }}
       whileHover={{ scale: 1.1 }}
       whileInView={{ x: 0, scale: 1 }}
-      className={`flex flex-col p-8 m-8  shadow-2xl rounded-xl  hover:bg-slate-400 hover:text-white sm:w-52 ${
+      className={`flex flex-col p-8 m-8 shadow-2xl rounded-xl  hover:bg-slate-400 hover:text-white sm:w-52 ${
         dark ? 'bg-slate-100' : ''
       }`}>
       {
