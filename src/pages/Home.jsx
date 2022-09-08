@@ -2,7 +2,7 @@ import React from 'react'
 import BG from '../images/bg2.bmp'
 import Scroll from '../components/Scroll'
 import { motion } from 'framer-motion'
-import ScrollIntoView from 'react-scroll-into-view'
+import Button from '../components/Button'
 
 const home = () => {
   return (
@@ -34,14 +34,12 @@ const home = () => {
           </div>
         </div>
         <div className='flex md:space-x-14 space-x-2'>
-          <button className=' bg-rose-700 hover:bg-rose-800 md:scale-125 md:hover:scale-150 transition text-white md:py-2 md:px-3 rounded-full'>
+          <button className=' bg-rose-700 hover:bg-rose-800 md:scale-125 md:hover:scale-150 transition text-white py-2 px-3 rounded-full'>
             <a href='https://drive.google.com/file/d/1iUe0aNqxPUXpE7CRYkTHVleWEcRbTt5U/view?usp=sharing'>
               Download CV
             </a>
           </button>
-          <button className='bg-rose-700 hover:bg-rose-800 md:scale-125 md:hover:scale-150 transition text-white py-2 px-5 rounded-full'>
-            <ScrollIntoView selector='#projects'>My Projects</ScrollIntoView>
-          </button>
+          <Button Name='My Projects' Selector='#projects' />
         </div>
       </motion.div>
       <div className='z-50'>

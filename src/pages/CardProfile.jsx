@@ -5,6 +5,7 @@ import Scroll from '../components/Scroll'
 import SocialItem from '../components/SocialItem'
 import ScrollIntoView from 'react-scroll-into-view'
 import { motion } from 'framer-motion'
+import Button from '../components/Button'
 
 function Card() {
   const { dark } = useContext(DarkMode)
@@ -43,9 +44,7 @@ function Card() {
               grow. If you have a good opportunity that matches my skills and
               experience then don't hesitate to contact me.
             </p>
-            <button className='bg-rose-700 hover:bg-rose-800 md:scale-125 md:hover:scale-150 transition text-white py-2 px-5 rounded-full'>
-              <ScrollIntoView selector='#contact'>My Projects</ScrollIntoView>
-            </button>
+            <Button Name='Contact Me' Selector='#contact' />
           </motion.div>
         </div>
         <motion.div
