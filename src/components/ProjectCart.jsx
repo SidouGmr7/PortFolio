@@ -4,9 +4,9 @@ import { motion } from 'framer-motion'
 const ProjectCart = ({ img, url, github, bol }) => {
   return (
     <motion.div
-      animate={{ x: 200 }}
-      whileHover={{ scale: 1.1, rotate: 2 }}
-      whileInView={{ x: 0, scale: 1 }}
+      animate={{ x: 200, opacity: 0 }}
+      whileHover={{ scale: 1.1, rotate: 1.2 }}
+      whileInView={{ x: 0, scale: 1, opacity: 1 }}
       className='relative transition m-6 md:m-0 shadow-2xl'>
       <img
         src={img}

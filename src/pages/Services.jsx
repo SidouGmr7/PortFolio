@@ -17,7 +17,6 @@ const Services = () => {
           Name='BackEnd'
           About='Create Backend with nodeJs Java Spring Boot or Firebase'
           bol={true}
-
         />
         <ServiceItem
           Name='Ui UX Design'

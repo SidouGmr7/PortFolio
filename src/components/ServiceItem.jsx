@@ -14,11 +14,13 @@ const ServiceItem = ({ Name, About, bol }) => {
 
   return (
     <motion.div
-      animate={{ x: 200 }}
+      animate={{ x: 200, opacity: 0 }}
       whileHover={{ scale: 1.1 }}
-      whileInView={{ x: 0, scale: 1 }}
-      className={`flex flex-col p-8 m-8 shadow-2xl rounded-xl    sm:w-52 ${
-        dark ? 'bg-slate-100 hover:bg-slate-900 hover:text-white text-black' : 'bg-slate-900 hover:bg-slate-100 text-white hover:text-black'
+      whileInView={{ x: 0, scale: 1, opacity: 1 }}
+      className={`flex flex-col p-8 m-8 shadow-2xl rounded-xl  transition  sm:w-52 ${
+        dark
+          ? 'bg-slate-100 hover:bg-slate-900 hover:text-white text-black'
+          : 'bg-neutral-400 hover:bg-slate-100 hover:text-black text-white '
       }`}>
       {
         {
@@ -37,13 +39,22 @@ const ServiceItem = ({ Name, About, bol }) => {
           MySql: <GrMysql className='mx-auto text-4xl text-blue-900' />,
           Python: <FaPython className='mx-auto text-4xl text-yellow-600' />,
 
-          FrontEnd: <AiOutlineDesktop className='mx-auto text-4xl text-rose-600' />,
+          FrontEnd: (
+            <AiOutlineDesktop className='mx-auto text-4xl text-rose-600' />
+          ),
           BackEnd: <BsCodeSlash className='mx-auto text-4xl text-rose-600' />,
-          'Ui UX Design': <FaPaintBrush className='mx-auto text-4xl text-rose-600' />,
+          'Ui UX Design': (
+            <FaPaintBrush className='mx-auto text-4xl text-rose-600' />
+          ),
           DataBase: <FiDatabase className='mx-auto text-4xl text-rose-600' />,
         }[Name]
       }
-      <p className={`mt-6 text-xl font-semibold text-center ${bol == true ? 'text-rose-600' : ''} }`}>{Name}</p>
+      <p
+        className={`mt-6 text-xl font-semibold text-center ${
+          bol == true ? 'text-rose-600' : ''
+        } }`}>
+        {Name}
+      </p>
       <p className={`mt-6 text-md  text-center`}>{About}</p>
     </motion.div>
   )

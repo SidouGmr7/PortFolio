@@ -8,8 +8,8 @@ export default function ContactMe() {
 
   return (
     <motion.div
-      animate={{ x: 200 }}
-      whileInView={{ x: 0 }}
+      animate={{ x: 200, opacity: 0 }}
+      whileInView={{ x: 0, opacity: 1 }}
       className='transition max-w-lg md:h-screen text-center m-auto md:py-72 py-52'
       id='contact'>
       <h1 className={`md:text-4xl ${dark && 'text-white'}`}>
@@ -18,10 +18,10 @@ export default function ContactMe() {
       <a
         href='mailto:goumirisidali@hotmail.com'
         className={`flex hover:scale-105 duration-200 bg-rose-600 transition-all ease-in-out items-center justify-center mt-10 ml-40 md:w-48 w-40 md:text-xl md:p-4 p-2 rounded-sm  cursor-pointer ${
-          dark ? ' text-white' : ' text-black'
+          dark ? ' text-white' : 'text-white'
         }`}>
         <span className='mr-3 '>Get in touch</span>
-        <FaArrowRight color={`${dark ? 'white' : 'black'}`} />
+        <FaArrowRight color='white' />
       </a>
     </motion.div>
   )
