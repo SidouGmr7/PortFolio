@@ -9,7 +9,7 @@ import { motion } from 'framer-motion'
 import { useContext } from 'react'
 import DarkMode from '../context/DarkMode'
 
-const ServiceItem = ({ Name, About }) => {
+const ServiceItem = ({ Name, About, bol }) => {
   const { dark } = useContext(DarkMode)
 
   return (
@@ -17,8 +17,8 @@ const ServiceItem = ({ Name, About }) => {
       animate={{ x: 200 }}
       whileHover={{ scale: 1.1 }}
       whileInView={{ x: 0, scale: 1 }}
-      className={`flex flex-col p-8 m-8 shadow-2xl rounded-xl  hover:bg-slate-400 hover:text-white sm:w-52 ${
-        dark ? 'bg-slate-100' : ''
+      className={`flex flex-col p-8 m-8 shadow-2xl rounded-xl    sm:w-52 ${
+        dark ? 'bg-slate-100 hover:bg-slate-900 hover:text-white text-black' : 'bg-slate-900 hover:bg-slate-100 text-white hover:text-black'
       }`}>
       {
         {
@@ -43,7 +43,7 @@ const ServiceItem = ({ Name, About }) => {
           DataBase: <FiDatabase className='mx-auto text-4xl text-rose-600' />,
         }[Name]
       }
-      <p className={`mt-6 text-xl font-semibold text-center text-rose-600 }`}>{Name}</p>
+      <p className={`mt-6 text-xl font-semibold text-center ${bol == true ? 'text-rose-600' : ''} }`}>{Name}</p>
       <p className={`mt-6 text-md  text-center`}>{About}</p>
     </motion.div>
   )

@@ -2,14 +2,17 @@ import 'primeicons/primeicons.css'
 import { motion } from 'framer-motion'
 
 const ProjectCart = ({ img, url, github, bol }) => {
-
   return (
     <motion.div
       animate={{ x: 200 }}
-      whileHover={{ scale: 1.1 , rotate: 2 }}
+      whileHover={{ scale: 1.1, rotate: 2 }}
       whileInView={{ x: 0, scale: 1 }}
-      className='relative transition m-6 md:m-0'>
-      <img src={img} alt='' className={`rounded-xl  ${bol ? 'opacity-40 ' : ''}`} />
+      className='relative transition m-6 md:m-0 shadow-2xl'>
+      <img
+        src={img}
+        alt=''
+        className={`rounded-xl  ${bol ? 'opacity-40 ' : ''} `}
+      />
       <div className='absolute md:bottom-2 bottom-3 right-3'>
         <a
           href={url}
@@ -29,7 +32,6 @@ const ProjectCart = ({ img, url, github, bol }) => {
           </a>
         )}
       </div>
-      
     </motion.div>
   )
 }

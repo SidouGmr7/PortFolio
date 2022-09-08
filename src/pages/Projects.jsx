@@ -16,12 +16,12 @@ const Projects = () => {
       <div className='grid md:grid-cols-2 pt-10 sm:gap-y-8 sm:gap-x-10 '>
         <ProjectCart
           img={Food}
-          url='https://deliveryfoodgmr.vercel.app/'
+          url='https://deliveryfoodgmr.vercel.app'
           github='https://github.com/SidouGmr7/DeliveryApp'
         />
         <ProjectCart
           img={Kanaghaz}
-          url='https://kanaghazdemo-bc29d.firebaseapp.com'
+          url='https://kanaghazdemo-bc29d.web.app'
           github='https://github.com/SidouGmr7/ControleInvestissement'
         />
         <ProjectCart
