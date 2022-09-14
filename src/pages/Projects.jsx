@@ -29,7 +29,11 @@ const Projects = () => {
           url='https://house-gmr.vercel.app/'
           github='https://github.com/SidouGmr7/HouseMarketPlace'
         />
-        <ProjectCart img={Chat} bol={true} />
+        <ProjectCart
+          img={Chat}
+          url='https://chat-gmr.vercel.app'
+          github='https://github.com/SidouGmr7/ChatGmr'
+        />
       </div>
       <Scroll selector='#contact' bottom='0' />
     </div>
