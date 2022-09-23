@@ -17,10 +17,10 @@ const ServiceItem = ({ Name, About, bol }) => {
       animate={{ x: 200, opacity: 0 }}
       whileHover={{ scale: 1.1 }}
       whileInView={{ x: 0, scale: 1, opacity: 1 }}
-      className={`flex flex-col p-8 m-8 shadow-2xl rounded-xl  transition  sm:w-52 ${
+      className={`flex flex-col p-8 m-8 shadow-2xl rounded-xl  transition-transform duration-1000  sm:w-52 ${
         dark
-          ? 'bg-slate-100 hover:bg-slate-900 hover:text-white text-black'
-          : 'bg-neutral-400 hover:bg-slate-100 hover:text-black text-white '
+          ? 'bg-slate-200 hover:bg-slate-800 hover:text-white text-black'
+          : 'bg-slate-700 hover:bg-slate-100 hover:text-black text-slate-300 '
       }`}>
       {
         {

@@ -5,18 +5,12 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 
 function App() {
-
   return (
     <DarkModeProvider>
       <Navbar />
       <Home />
-      <div className='z-10 relative'>
-        <Content />
-      </div>
-      <div className='z-10 relative'>
-        <Footer />
-      </div>
-   
+      <Content />
+      <Footer />
     </DarkModeProvider>
   )
 }

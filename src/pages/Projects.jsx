@@ -16,23 +16,31 @@ const Projects = () => {
       <div className='grid md:grid-cols-2 pt-10 sm:gap-y-8 sm:gap-x-10 '>
         <ProjectCart
           img={Food}
-          url='https://deliveryfoodgmr.vercel.app'
-          github='https://github.com/SidouGmr7/DeliveryApp'
+          url='deliveryfoodgmr.vercel.app'
+          github='github.com/SidouGmr7/DeliveryApp'
+          x={-150}
+          y={-150}
         />
         <ProjectCart
           img={Kanaghaz}
-          url='https://kanaghazdemo-bc29d.web.app'
-          github='https://github.com/SidouGmr7/ControleInvestissement'
+          url='kanaghazdemo-bc29d.web.app'
+          github='github.com/SidouGmr7/ControleInvestissement'
+          x={150}
+          y={-150}
         />
         <ProjectCart
           img={House}
-          url='https://house-gmr.vercel.app/'
-          github='https://github.com/SidouGmr7/HouseMarketPlace'
+          url='house-gmr.vercel.app/'
+          github='github.com/SidouGmr7/HouseMarketPlace'
+          x={-150}
+          y={150}
         />
         <ProjectCart
           img={Chat}
-          url='https://chat-gmr.vercel.app'
-          github='https://github.com/SidouGmr7/ChatGmr'
+          url='chat-gmr.vercel.app'
+          github='github.com/SidouGmr7/ChatGmr'
+          x={150}
+          y={150}
         />
       </div>
       <Scroll selector='#contact' bottom='0' />

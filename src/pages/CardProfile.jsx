@@ -17,8 +17,8 @@ function Card() {
       <div className='flex pt-12 md:pb-8'>
         <div className='w-[50%] md:flex hidden'>
           <motion.div
-            animate={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
+            animate={{ x: 200, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
             className='mr-10 pl-10 space-y-5 grid justify-items-center transition'>
             <h1 className='text-3xl text-rose-600 pb-5  font-bold '>
               Get to know me !
@@ -47,8 +47,8 @@ function Card() {
           </motion.div>
         </div>
         <motion.div
-          animate={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          animate={{ x: -200, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
           className={`md:w-[25%] md:max-w-lg max-w-xs mx-auto shadow-2xl  rounded-xl p-10  hover:scale-110 duration-500 transition ${
             dark
               ? 'bg-gradient-to-t from-slate-800 to-slate-500'

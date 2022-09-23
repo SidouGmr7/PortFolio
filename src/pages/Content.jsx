@@ -11,7 +11,7 @@ const Content = () => {
 
   return (
     <div
-      className={`py-10 sm:px-5 bg-white-100 overflow-hidden scrollbar-hide dark ${dark ? 'bg-slate-900' : 'bg-slate-100'} `}>
+      className={`py-10 sm:px-5 overflow-hidden scrollbar-hide dark ${dark ? 'bg-slate-900' : 'bg-slate-100'} `}>
       <CardProfile />
       <Services />
       <Skills />

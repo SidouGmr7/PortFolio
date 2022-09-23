@@ -18,7 +18,7 @@ const home = () => {
           className='md:w-[50%] flex flex-col items-center ml-4 transition duration-1000'>
           <div className='md:space-x-10 md:space-y-4'>
             <div className=' md:text-6xl text-4xl font-bold text-white capitalize space-y-4 space-x-10'>
-              <h1 className="text-4xl">hey, i'm</h1>
+              <h1 className='text-4xl'>hey, i'm</h1>
               <h1>
                 <span className='text-rose-600 ml-4'>G</span>oumiri
                 <span className='text-rose-600 ml-4'>A</span>li
@@ -34,11 +34,14 @@ const home = () => {
                 Building The Frontend of Web Applications that leads to the
                 success of the overall product
               </h1>
-              <Button
-                Name='SAVOIR PLUS'
-                Selector='#service'
-                BGC='hover:bg-[#68fff1] text-white border-2 border border-[#68fff1]'
-              />
+              <div className='md:flex gap-10 md:w-[120%]'>
+                <Button Name='Savoir Plus' Selector='#service' />
+                <a
+                  className='bg-rose-700 hover:bg-rose-800 md:scale-125 md:hover:scale-150 transition text-white py-2 px-5 rounded-full'
+                  href='https://drive.google.com/file/d/1i_YQI5jzgC3YIxj9T73vlmrzNpdpwWo2/view?usp=sharing'>
+                  Download CV
+                </a>
+              </div>
             </div>
           </div>
         </motion.div>
