@@ -51,7 +51,7 @@ const ServiceItem = ({ Name, About, bol }) => {
       }
       <p
         className={`mt-6 text-xl font-semibold text-center ${
-          bol == true ? 'text-rose-600' : ''
+          bol === true ? 'text-rose-600' : ''
         } }`}>
         {Name}
       </p>

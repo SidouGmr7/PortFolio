@@ -11,8 +11,7 @@ const Content = () => {
 
   return (
     <div
-      style={{ background: `${dark ? '#111111' : '#f9fbfd'} ` }}
-      className={`py-10 sm:px-5 bg-white-100 overflow-hidden scrollbar-hide dark'}`}>
+      className={`py-10 sm:px-5 bg-white-100 overflow-hidden scrollbar-hide dark ${dark ? 'bg-slate-900' : 'bg-slate-100'} `}>
       <CardProfile />
       <Services />
       <Skills />

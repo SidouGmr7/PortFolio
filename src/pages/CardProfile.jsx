@@ -3,7 +3,6 @@ import SidouProfile from '../images/SidouProfile.jpg'
 import DarkMode from '../context/DarkMode'
 import Scroll from '../components/Scroll'
 import SocialItem from '../components/SocialItem'
-import ScrollIntoView from 'react-scroll-into-view'
 import { motion } from 'framer-motion'
 import Button from '../components/Button'
 
