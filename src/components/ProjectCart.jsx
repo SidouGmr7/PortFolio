@@ -7,7 +7,7 @@ const ProjectCart = ({ img, url, github, name, desc, style }) => {
   const { dark } = useContext(DarkMode)
 
   return (
-    <div className={`md:flex md:${style} md:items-center md:pt-10 pt-24`}>
+    <div className={`md:flex ${style} md:items-center md:pt-10 pt-24`}>
       <motion.div
         animate={{ x: 200, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}

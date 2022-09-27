@@ -14,12 +14,12 @@ const Projects = () => {
       </p>
       <div className='flex flex-col pt-24'>
         <ProjectCart
-          img={Food}
-          url='deliveryfoodgmr.vercel.app'
-          github='github.com/SidouGmr7/DeliveryApp'
-          name='Delivery App'
-          desc='if you want food this is the best way to deliver food'
-          style='flex-row-reverse'
+          img={Digital}
+          url='digital-marketing-ebon.vercel.app'
+          github='github.com/SidouGmr7/digitalmarketing'
+          name='Digital Marketing'
+          desc='A digital marketing presentation page'
+          style='md:flex-row-reverse'
         />
         <ProjectCart
           img={Kanaghaz}
@@ -27,7 +27,15 @@ const Projects = () => {
           github='github.com/SidouGmr7/ControleInvestissement'
           name='Controle Investissements'
           desc='web application to control investment decisions for a company of KANAGHAZ support by artificial intelligence'
-          style='flex-row'
+          style='md:flex-row'
+        />
+        <ProjectCart
+          img={Food}
+          url='deliveryfoodgmr.vercel.app'
+          github='github.com/SidouGmr7/DeliveryApp'
+          name='Delivery App'
+          desc='if you want food this is the best way to deliver food'
+          style='md:flex-row-reverse'
         />
         <ProjectCart
           img={House}
@@ -35,7 +43,7 @@ const Projects = () => {
           github='github.com/SidouGmr7/HouseMarketPlace'
           name='House Market Place'
           desc='If you want to buy and rent a house, this site is the best to meet your requests'
-          style='flex-row-reverse'
+          style='md:flex-row'
         />
         <ProjectCart
           img={Chat}
@@ -43,15 +51,7 @@ const Projects = () => {
           github='github.com/SidouGmr7/ChatGmr'
           name='Chat Messenger'
           desc='A chatting app between friends'
-          style='flex-row'
-        />
-        <ProjectCart
-          img={Digital}
-          url='digital-marketing-ebon.vercel.app'
-          github='github.com/SidouGmr7/digitalmarketing'
-          name='Digital Marketing'
-          desc='A digital marketing presentation page'
-          style='flex-row-reverse'
+          style='md:flex-row-reverse'
         />
       </div>
     </div>
