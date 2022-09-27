@@ -1,27 +1,62 @@
 import 'primeicons/primeicons.css'
 import { motion } from 'framer-motion'
+import { useContext } from 'react'
+import DarkMode from '../context/DarkMode'
 
-const ProjectCart = ({ img, url, github, x, y }) => {
+const ProjectCart = ({ img, url, github, name, desc, style }) => {
+  const { dark } = useContext(DarkMode)
+
   return (
-    <motion.div
-      animate={{ x: x, y: y, opacity: 0 }}
-      whileHover={{ scale: 1.1, rotate: 1.2 }}
-      whileInView={{ x: 0, y: 0, scale: 1, opacity: 1 }}
-      className='relative transition duration-1000 m-6 md:m-0 shadow-2xl'>
-      <img src={img} alt='' className='rounded-xl' onClick={url} />
-      <div className='absolute md:bottom-2 bottom-3 right-3'>
-        <a
-          href={url}
-          className=' text-rose-600 bg-opacity-60 bg-neutral-200 hover:bg-black hover:bg-opacity-50 transition rounded-xl px-2 p-1 font-semibold md:text-lg text-sm'>
-          Open
-        </a>{' '}
-        <a
-          href={github}
-          className='text-rose-600 bg-opacity-60 bg-gray-200 hover:bg-black hover:bg-opacity-50 transition rounded-xl  px-2 p-1 font-semibold md:text-lg text-sm'>
-          Github
-        </a>
-      </div>
-    </motion.div>
+    <div className={`md:flex md:${style} md:items-center md:pt-10 pt-24`}>
+      <motion.div
+        animate={{ x: 200, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        className=' md:w-[50%] flex flex-col items-center ml-4 transition duration-500'>
+        <div className=' md:flex md:flex-col items-center text-center md:gap-6 pb-4 md:pb-0'>
+          <p
+            className={` ${
+              dark
+                ? 'text-[#27c7b7] before:bg-[#68fff1]'
+                : 'text-rose-600 before:bg-rouse-600'
+            }  bfont-bold uppercase md:text-3xl text-2xl relative before:absolute before:rounded-lg before:w-14 before:h-1  before:-bottom-1`}>
+            {name}
+          </p>
+          <div
+            className={`${
+              dark ? 'text-gray-200' : 'text-gray-800'
+            } capitalize md:text-xl text-sm md:w-[60%] w-[80%] mx-auto space-y-4 pt-4 md:pt-0`}>
+            {desc}
+          </div>
+        </div>
+      </motion.div>
+      <motion.div
+        animate={{ x: -200, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        className='md:w-[50%] flex flex-col relative items-center transition-all duration-1000'>
+        <img
+          src={img}
+          alt=''
+          className='rounded-full hover:rounded-xl transition-all duration-700 opacity-80 hover:opacity-100'
+          onClick={url}
+        />
+        <div className='absolute bottom-3 right-auto'>
+          <a
+            href={url}
+            className={` ${
+              dark ? 'text-[#27c7b7]' : 'text-rose-600'
+            }  bg-opacity-60 bg-neutral-200 hover:bg-slate-300 hover:bg-opacity-50 transition rounded-xl px-4 p-2 font-semibold md:text-lg text-sm`}>
+            Open
+          </a>{' '}
+          <a
+            href={github}
+            className={` ${
+              dark ? 'text-[#27c7b7]' : 'text-rose-600'
+            }  bg-opacity-60 bg-neutral-200 hover:bg-slate-300 hover:bg-opacity-50 transition rounded-xl px-4 p-2 font-semibold md:text-lg text-sm`}>
+            Github
+          </a>
+        </div>
+      </motion.div>
+    </div>
   )
 }
 

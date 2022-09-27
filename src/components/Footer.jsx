@@ -10,7 +10,7 @@ function Footer() {
           <SocialItem name='Linkedin' href='https://www.linkedin.com/in/sidali-gmr-4bbba21a4/' Color='text-blue-500 hover:bg-blue-500'/>
           <SocialItem name='Email' href='https://mailto:goumirisidali@hotmail.com' Color='text-teal-500 hover:bg-teal-500'/>
           <SocialItem name='Instagram' href=' https://www.instagram.com/sidou_gmr/' Color='text-orange-600 hover:bg-orange-600'/>
-          <SocialItem name='Messanger' href=' https://www.instagram.com/sidou_gmr/' Color='text-blue-500 hover:bg-blue-500'/>
+          <SocialItem name='Messanger' href=' https://www.facebook.com/messages/t/100009280429982' Color='text-blue-500 hover:bg-blue-500'/>
       </div>
       <div className='flex align-center justify-center mt-4 md:text-xl'>
         <p className='text-black mb-4'>

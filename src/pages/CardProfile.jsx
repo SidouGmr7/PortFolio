@@ -67,7 +67,7 @@ function Card() {
               Goumiri Ali
             </p>
           </div>
-          <div className='text-center md:m-0 m-5'>
+          <div className=' text-center md:m-0 m-5'>
             <p
               className={` md:hidden text-xl sm:text-2xl font-semibold  ${
                 dark ? 'text-white' : 'text-gray-900 '
@@ -87,13 +87,13 @@ function Card() {
               FrontEnd developer
             </p>
             <p
-              className={`text-xs  sm:text-base  pt-2 pb-3 px-5 w-auto inline-block ${
+              className={`text-xs   sm:text-base  pt-2 pb-3 px-5 w-auto inline-block ${
                 dark ? 'text-white' : 'text-gray-600'
               }`}>
-              <span className='text-blue-400'>React</span> /
+              <span className='text-blue-400 '>React</span> /
               <span className='text-yellow-300'> Firebase</span>
             </p>
-            <div className='grid grid-cols-3 justify-center md:pl-10 pl-2 hover:scale-105 duration-500 transition-all ease-in-out '>
+            <div className='grid grid-cols-3 justify-center md:pl-10 pl-2 hover:scale-105 duration-500 transition-all ease-in-out bg-slate-300 bg-opacity-10 rounded-full'>
               <SocialItem
                 name='Github'
                 href='https://github.com/SidouGmr7/'
@@ -121,7 +121,7 @@ function Card() {
               />
               <SocialItem
                 name='Messanger'
-                href=' https://www.instagram.com/sidou_gmr/'
+                href=' https://www.facebook.com/messages/t/100009280429982'
                 Color='text-blue-500 hover:bg-blue-500'
               />
             </div>

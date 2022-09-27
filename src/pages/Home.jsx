@@ -34,7 +34,7 @@ const home = () => {
                 Building The Frontend of Web Applications that leads to the
                 success of the overall product
               </h1>
-              <div className='md:flex gap-10 md:w-[120%]'>
+              <div className='md:flex gap-10 w-[120%]'>
                 <Button Name='Savoir Plus' Selector='#service' />
                 <a
                   className='bg-rose-700 hover:bg-rose-800 md:scale-125 md:hover:scale-150 transition text-white py-2 px-5 rounded-full'
