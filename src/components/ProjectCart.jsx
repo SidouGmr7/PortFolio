@@ -18,13 +18,13 @@ const ProjectCart = ({ img, url, github, name, desc, style }) => {
               dark
                 ? 'text-[#27c7b7] before:bg-[#68fff1]'
                 : 'text-rose-600 before:bg-rouse-600'
-            }  bfont-bold uppercase md:text-3xl text-2xl relative before:absolute before:rounded-lg before:w-14 before:h-1  before:-bottom-1`}>
+            }  bfont-bold uppercase lg:text-4xl md:text-3xl text-2xl relative before:absolute before:rounded-lg before:w-14 before:h-1  before:-bottom-1`}>
             {name}
           </p>
           <div
             className={`${
               dark ? 'text-gray-200' : 'text-gray-800'
-            } capitalize md:text-xl text-sm md:w-[60%] w-[80%] mx-auto space-y-4 pt-4 md:pt-0`}>
+            } capitalize lg:text-2xl md:text-xl text-sm md:w-[60%] w-[80%] mx-auto space-y-4 pt-4 md:pt-0`}>
             {desc}
           </div>
         </div>
@@ -41,14 +41,14 @@ const ProjectCart = ({ img, url, github, name, desc, style }) => {
         />
         <div className='absolute bottom-3 right-auto'>
           <a
-            href={url}
+            href={`https://` + url}
             className={` ${
               dark ? 'text-[#27c7b7]' : 'text-rose-600'
             }  bg-opacity-60 bg-neutral-200 hover:bg-slate-300 hover:bg-opacity-50 transition rounded-xl px-4 p-2 font-semibold md:text-lg text-sm`}>
             Open
           </a>{' '}
           <a
-            href={github}
+            href={`https://` + github}
             className={` ${
               dark ? 'text-[#27c7b7]' : 'text-rose-600'
             }  bg-opacity-60 bg-neutral-200 hover:bg-slate-300 hover:bg-opacity-50 transition rounded-xl px-4 p-2 font-semibold md:text-lg text-sm`}>

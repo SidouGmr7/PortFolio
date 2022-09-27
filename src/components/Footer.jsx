@@ -3,6 +3,8 @@ import SocialItem from '../components/SocialItem'
 
 function Footer() {
   return (
+    <>
+    
     <div className={`py-10  overflow-hidden bg-white`}>
       <div className='flex gap-2 justify-center mt-4 md:gap-8'>
           <SocialItem name='Github' href='https://github.com/SidouGmr7/' Color='text-gray-800 hover:bg-gray-800'/>
@@ -23,6 +25,7 @@ function Footer() {
       </div>
    </div>
     
+    </>
   )
 }
 

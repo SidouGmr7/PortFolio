@@ -34,9 +34,7 @@ function Card() {
               <br />
               I also like sharing content related to the stuff that I have
               learned over the years in Web Development so it can help other
-              people of the Dev Community. Feel free to Connect or Follow me on
-              my Linkedin where I post useful content related to Web Development
-              and Programming.
+              people of the Dev Community.
               <br />
               <br />
               I'm open to Job opportunities where I can contribute, learn and
@@ -49,7 +47,7 @@ function Card() {
         <motion.div
           animate={{ x: -200, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
-          className={`md:w-[25%] md:max-w-lg max-w-xs mx-auto shadow-2xl  rounded-xl p-10  hover:scale-110 duration-500 transition ${
+          className={`lg:w-[25%] md:w-[40%] md:max-w-lg max-w-xs mx-auto shadow-2xl  rounded-xl p-10  hover:scale-110 duration-500 transition ${
             dark
               ? 'bg-gradient-to-t from-slate-800 to-slate-500'
               : 'bg-gradient-to-r from-slate-200 to-blue-200 '
@@ -67,7 +65,7 @@ function Card() {
               Goumiri Ali
             </p>
           </div>
-          <div className=' text-center md:m-0 m-5'>
+          <div className='text-center md:m-0 m-5'>
             <p
               className={` md:hidden text-xl sm:text-2xl font-semibold  ${
                 dark ? 'text-white' : 'text-gray-900 '
@@ -87,13 +85,19 @@ function Card() {
               FrontEnd developer
             </p>
             <p
-              className={`text-xs   sm:text-base  pt-2 pb-3 px-5 w-auto inline-block ${
+              className={`text-xs  sm:text-base  pt-2 px-5 w-auto inline-block ${
                 dark ? 'text-white' : 'text-gray-600'
               }`}>
-              <span className='text-blue-400 '>React</span> /
+              <span className='text-sky-400'>React</span> /
               <span className='text-yellow-300'> Firebase</span>
             </p>
-            <div className='grid grid-cols-3 justify-center md:pl-10 pl-2 hover:scale-105 duration-500 transition-all ease-in-out bg-slate-300 bg-opacity-10 rounded-full'>
+            <p
+              className={`text-xs  sm:text-base 0 pt-2 pb-3 w-auto ${
+                dark ? 'text-zinc-400' : 'text-gray-800'
+              }`}>
+              Number: 0664784130
+            </p>
+            <div className='grid grid-cols-3 justify-center md:pl-10 pl-2 hover:scale-105 duration-500 transition-all max-h-500 ease-in-out bg-slate-300 bg-opacity-10 md:p-0 p-2 rounded-full'>
               <SocialItem
                 name='Github'
                 href='https://github.com/SidouGmr7/'

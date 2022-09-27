@@ -12,14 +12,14 @@ function Skills() {
       </p>
 
       <div className='grid  lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2  pt-10'>
-        <ServiceItem Name='React' />
-        <ServiceItem Name='Angular' />
-        <ServiceItem Name='Firebase' />
-        <ServiceItem Name='Tailwind' />
-        <ServiceItem Name='Javascript' />
-        <ServiceItem Name='PrimeFaces' />
-        <ServiceItem Name='MySql' />
-        <ServiceItem Name='Python' />
+        <ServiceItem Name='React' d={0.5} />
+        <ServiceItem Name='Angular' d={0.7} />
+        <ServiceItem Name='Firebase' d={1} />
+        <ServiceItem Name='Tailwind'd={1.5} />
+        <ServiceItem Name='Javascript' d={1.5} />
+        <ServiceItem Name='PrimeFaces'd={1.7} />
+        <ServiceItem Name='MySql' d={2}/>
+        <ServiceItem Name='Python'd={2.5} />
       </div>
       <Scroll selector='#projects' bottom='0' />
     </div>
