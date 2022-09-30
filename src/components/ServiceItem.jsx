@@ -10,18 +10,18 @@ import { motion } from 'framer-motion'
 import { useContext } from 'react'
 import DarkMode from '../context/DarkMode'
 
-const ServiceItem = ({ Name, About, bol, d }) => {
+const ServiceItem = ({ Name, About, bol, d, x, y }) => {
   const { dark } = useContext(DarkMode)
 
   return (
     <motion.div
-      animate={{ x: 200, opacity: 0 }}
-      whileInView={{ x: 0, opacity: 1 }}
+      animate={{ x: x, y: y, opacity: 0 }}
+      whileInView={{ x: 0, y: 0, opacity: 1 }}
       transition={{ duration: d }}
-      className={`flex flex-col p-8 m-8 shadow-2xl rounded-xl hover:scale-150 sm:w-52 ${
+      className={`flex flex-col p-8 m-8 shadow-2xl transition border-slate-800 border-2 rounded-[10%] hover:scale-150 sm:w-52 ${
         dark
-          ? 'bg-slate-200 hover:bg-slate-800 hover:text-white text-black'
-          : 'bg-slate-700 hover:bg-slate-100 hover:text-black text-slate-300 '
+          ? 'bg-slate-700 bg-opacity-10 hover:bg-opacity-40 text-white'
+          : ' hover:bg-slate-200 '
       }`}>
       {
         {

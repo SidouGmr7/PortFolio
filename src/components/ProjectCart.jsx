@@ -11,7 +11,7 @@ const ProjectCart = ({ img, url, github, name, desc, style }) => {
       <motion.div
         animate={{ x: 200, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
-        className=' md:w-[50%] flex flex-col items-center ml-4 transition duration-500'>
+        className=' md:w-[50%] flex flex-col items-center ml-4 transition duration-500 '>
         <div className=' md:flex md:flex-col items-center text-center md:gap-6 pb-4 md:pb-0'>
           <p
             className={` ${
@@ -32,11 +32,11 @@ const ProjectCart = ({ img, url, github, name, desc, style }) => {
       <motion.div
         animate={{ x: -200, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
-        className='md:w-[50%] flex flex-col relative items-center transition-all duration-1000'>
+        className='md:w-[50%] flex flex-col relative items-center transition-all duration-1000 '>
         <img
           src={img}
           alt=''
-          className='rounded-full hover:rounded-xl transition-all duration-700 opacity-80 hover:opacity-100'
+          className='rounded-full hover:rounded-xl transition-all duration-700 opacity-80 shadow-2xl  hover:opacity-100'
           onClick={url}
         />
         <div className='absolute bottom-3 right-auto'>

@@ -13,30 +13,35 @@ const Services = () => {
           About='Create Web Application using React or Angular framework'
           bol={true}
           d={1.7}
+          x={200}
         />
         <ServiceItem
           Name='BackEnd'
           About='Create Backend with nodeJs, Laraval or Firebase'
           bol={true}
           d={1.5}
+          x={200}
         />
         <ServiceItem
           Name='Ui UX Design'
           About='Design Web Application with Tailwind ,Materiel UI, PrimeFaces'
           bol={true}
           d={1}
+          x={200}
         />
         <ServiceItem
           Name='DataBase'
           About='Manage DataBase with MySql or Firestore DatBase'
           bol={true}
           d={0.7}
+          x={200}
         />
         <ServiceItem
           Name='Content'
           About='Create the best content of your website'
           bol={true}
           d={0.5}
+          x={200}
         />
       </div>
       <Scroll selector='#tech' bottom='0' />

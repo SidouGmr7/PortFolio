@@ -47,11 +47,7 @@ function Card() {
         <motion.div
           animate={{ x: -200, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
-          className={`lg:w-[25%] md:w-[40%] md:max-w-lg max-w-xs mx-auto shadow-2xl  rounded-xl p-10  hover:scale-110 duration-500 transition ${
-            dark
-              ? 'bg-gradient-to-t from-slate-800 to-slate-500'
-              : 'bg-gradient-to-r from-slate-200 to-blue-200 '
-          } `}>
+          className={`lg:w-[25%] md:w-[40%] md:max-w-lg max-w-xs mx-auto shadow-2xl  rounded-xl p-10  hover:scale-125 duration-500 transition`}>
           <div className='hover:scale-105 duration-500 transition-all ease-in-out '>
             <img
               alt='sidou'
@@ -65,43 +61,45 @@ function Card() {
               Goumiri Ali
             </p>
           </div>
-          <div className='text-center md:m-0 m-5'>
-            <p
-              className={` md:hidden text-xl sm:text-2xl font-semibold  ${
-                dark ? 'text-white' : 'text-gray-900 '
-              }`}>
-              Goumiri Ali
-            </p>
-            <p
-              className={`text-xs sm:text-base 0 pt-2 w-auto ${
-                dark ? 'text-white' : 'text-gray-800 '
-              }`}>
-              <span className='text-rose-600'>IT engineer</span>
-            </p>
-            <p
-              className={`text-xs sm:text-base 0 pt-2 w-auto ${
-                dark ? 'text-white' : 'text-gray-800 '
-              }`}>
-              FrontEnd developer
-            </p>
-            <p
-              className={`text-xs  sm:text-base  pt-2 px-5 w-auto inline-block ${
-                dark ? 'text-white' : 'text-gray-600'
-              }`}>
-              <span className='text-sky-400'>React</span> /
-              <span className='text-yellow-300'> Firebase</span>
-            </p>
-            <p
-              className={`text-xs  sm:text-base 0 pt-2 pb-3 w-auto ${
-                dark ? 'text-zinc-400' : 'text-gray-800'
-              }`}>
-              Number: 0664784130
-            </p>
+          <div className='text-center  pt-2'>
+            <div className='md:bg-slate-300 md:bg-opacity-10 hover:scale-105 duration-500 transition-all md:p-0 md:mx-0 p-4 -mx-10 rounded-full mb-1'>
+              <p
+                className={` md:hidden text-xl sm:text-2xl font-semibold  ${
+                  dark ? 'text-white' : 'text-gray-900 '
+                }`}>
+                Goumiri Ali
+              </p>
+              <p
+                className={`text-xs sm:text-base 0 pt-2 w-auto ${
+                  dark ? 'text-white' : 'text-gray-800 '
+                }`}>
+                <span className='text-rose-600'>IT engineer</span>
+              </p>
+              <p
+                className={`text-xs sm:text-base 0 pt-2 w-auto ${
+                  dark ? 'text-white' : 'text-gray-800 '
+                }`}>
+                FrontEnd developer
+              </p>
+              <p
+                className={`text-xs  sm:text-base  pt-2 px-5 w-auto inline-block ${
+                  dark ? 'text-white' : 'text-gray-600'
+                }`}>
+                <span className='text-sky-400'>React</span> /
+                <span className='text-yellow-300'> Firebase</span>
+              </p>
+              <p
+                className={`text-xs  sm:text-base 0 pt-2 pb-3 w-auto ${
+                  dark ? 'text-zinc-400' : 'text-gray-800'
+                }`}>
+                Number: 0664784130
+              </p>
+            </div>
             <div className='grid grid-cols-3 justify-center md:pl-10 pl-2 hover:scale-105 duration-500 transition-all max-h-500 ease-in-out bg-slate-300 bg-opacity-10 md:p-0 p-2 rounded-full'>
               <SocialItem
                 name='Github'
                 href='https://github.com/SidouGmr7/'
-                Color='text-gray-800 hover:bg-gray-800'
+                Color='text-gray-900 hover:bg-gray-800'
               />
               <SocialItem
                 name='Facebook'

@@ -1,4 +1,3 @@
-import Scroll from '../components/Scroll'
 import ProjectCart from '../components/ProjectCart'
 import Food from '../images/Food.bmp'
 import Kanaghaz from '../images/Kanaghaz.bmp'
