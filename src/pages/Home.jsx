@@ -3,6 +3,15 @@ import BG from '../images/bg2.bmp'
 import Scroll from '../components/Scroll'
 import { motion } from 'framer-motion'
 import Button from '../components/Button'
+import {
+  Animator,
+  batch,
+  Fade,
+  MoveOut,
+  ScrollContainer,
+  ScrollPage,
+  Sticky,
+} from 'react-scroll-motion'
 
 const home = () => {
   return (
@@ -10,7 +19,7 @@ const home = () => {
       style={{ backgroundImage: `url(${BG})` }}
       className='bg-fixed h-screen md:p-52 p-20'
       id='home'>
-      <div className='flex md:flex-row flex-col items-center'>
+      <div fixed className='flex md:flex-row flex-col items-center'>
         <motion.div
           initial={{ opacity: 0, x: -400 }}
           animate={{ opacity: 1, x: 0 }}
@@ -45,6 +54,7 @@ const home = () => {
             </div>
           </div>
         </motion.div>
+
         <motion.div
           initial={{ opacity: 0, x: 400 }}
           animate={{ opacity: 1, x: 0 }}
@@ -57,9 +67,10 @@ const home = () => {
             className='w-[70%] animate-[bounce_4s_ease-in-out_infinite] md:ml-20 ml-16 md:mt-10 mt-10 '
           />
         </motion.div>
-      </div>
-      <div className='z-50'>
-        <Scroll selector='#profile' bottom='0' />
+
+        <div className='z-50'>
+          <Scroll selector='#profile' bottom='0' />
+        </div>
       </div>
     </div>
   )

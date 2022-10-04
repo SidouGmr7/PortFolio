@@ -30,28 +30,30 @@ const ProjectCart = ({ img, url, github, name, desc, style }) => {
         </div>
       </motion.div>
       <motion.div
+      
         animate={{ x: -200, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         className='md:w-[50%] flex flex-col relative items-center transition-all duration-1000 '>
-        <img
-          src={img}
-          alt=''
-          className='rounded-full hover:rounded-xl transition-all duration-700 opacity-80 shadow-2xl  hover:opacity-100'
-          onClick={url}
-        />
+        <a href={url}>
+          <img
+            src={img}
+            alt=''
+            className='rounded-full hover:rounded-3xl transition-all duration-500'
+          />
+        </a>
         <div className='absolute bottom-3 right-auto'>
           <a
             href={`https://` + url}
             className={` ${
               dark ? 'text-[#27c7b7]' : 'text-rose-600'
-            }  bg-opacity-60 bg-neutral-200 hover:bg-slate-300 hover:bg-opacity-50 transition rounded-xl px-4 p-2 font-semibold md:text-lg text-sm`}>
+            } backdrop-blur-sm   hover:bg-slate-300 hover:bg-opacity-50 transition rounded-xl px-4 p-2 font-semibold md:text-lg text-sm`}>
             Open
           </a>{' '}
           <a
             href={`https://` + github}
             className={` ${
               dark ? 'text-[#27c7b7]' : 'text-rose-600'
-            }  bg-opacity-60 bg-neutral-200 hover:bg-slate-300 hover:bg-opacity-50 transition rounded-xl px-4 p-2 font-semibold md:text-lg text-sm`}>
+            }  backdrop-blur-sm hover:bg-slate-300 hover:bg-opacity-50 transition rounded-xl px-4 p-2 font-semibold md:text-lg text-sm`}>
             Github
           </a>
         </div>

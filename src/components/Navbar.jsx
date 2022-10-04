@@ -9,10 +9,12 @@ const Navbar = () => {
   const { dark, changeMode } = useContext(DarkMode)
 
   return (
-    <header className={`fixed z-50 mt-4 w-screen bg-primary `}>
+    <header className='fixed z-50 pt-4 pb-2 w-screen backdrop-blur-sm'>
       <div className='md:flex w-full h-full items-center justify-between'>
         <div className='flex items-center justify-center'>
-          <div
+          <motion.div
+          whileTap={{rotate: 180}}
+          whileHover={{rotate: 60}}
             className={`md:text-xl m-1 p-1 sm:m-2 sm:p-2 rounded-full transition ${
               dark
                 ? 'text-white hover:bg-white hover:text-black '
@@ -20,7 +22,7 @@ const Navbar = () => {
             }`}
             onClick={changeMode}>
             <FiSun />
-          </div>
+          </motion.div>
           <div className='flex items-center gap-2'>
             <p className={`md:text-xl ${dark && 'text-white'}`}>
               MY {''}

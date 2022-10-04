@@ -15,17 +15,17 @@ function Card() {
         Profile
       </p>
       <div className='flex pt-12 md:pb-8'>
-        <div className='w-[50%] md:flex hidden'>
-          <motion.div
-            animate={{ x: 200, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            className='mr-10 pl-10 space-y-5 grid justify-items-center transition'>
+        <motion.div
+          className='w-[50%] md:flex hidden transition'
+          animate={{ x: 200, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}>
+          <div className='mr-10 pl-10 space-y-5 grid justify-items-center'>
             <h1 className='text-3xl text-rose-600 pb-5  font-bold '>
               Get to know me !
             </h1>
             <p
               className={`text-lg text-justify  ${
-                dark ? 'text-white' : 'text-gray-600 font-semibold'
+                dark ? ' text-gray-200' : 'text-gray-600 font-semibold'
               }`}>
               I'm a Frontend Web Developer building the Front-end of Websites
               and Web Applications that leads to the success of the overall
@@ -42,33 +42,21 @@ function Card() {
               experience then don't hesitate to contact me.
             </p>
             <Button Name='Contact Me' Selector='#contact' />
-          </motion.div>
-        </div>
+          </div>
+        </motion.div>
         <motion.div
           animate={{ x: -200, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
-          className={`lg:w-[25%] md:w-[40%] md:max-w-lg max-w-xs mx-auto shadow-2xl  rounded-xl p-10  hover:scale-125 duration-500 transition`}>
+          className='lg:w-[25%] md:w-[40%] md:max-w-lg max-w-xs mx-auto shadow-2xl  rounded-xl p-10  hover:scale-125 duration-500 transition'>
           <div className='hover:scale-105 duration-500 transition-all ease-in-out '>
             <img
               alt='sidou'
               src={SidouProfile}
               className='md:w-44 w-32 mx-auto shadow-2xl rounded-full drop-shadow-sm'
             />
-            <p
-              className={` hidden  text-center justify-center text-xl  pt-2   ${
-                dark ? 'text-gray-200' : 'text-gray-900 '
-              }`}>
-              Goumiri Ali
-            </p>
           </div>
-          <div className='text-center  pt-2'>
+          <div className='text-center pt-2'>
             <div className='md:bg-slate-300 md:bg-opacity-10 hover:scale-105 duration-500 transition-all md:p-0 md:mx-0 p-4 -mx-10 rounded-full mb-1'>
-              <p
-                className={` md:hidden text-xl sm:text-2xl font-semibold  ${
-                  dark ? 'text-white' : 'text-gray-900 '
-                }`}>
-                Goumiri Ali
-              </p>
               <p
                 className={`text-xs sm:text-base 0 pt-2 w-auto ${
                   dark ? 'text-white' : 'text-gray-800 '
