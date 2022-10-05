@@ -15,7 +15,6 @@ const ServiceItem = ({ Name, About, bol, d, x, y }) => {
 
   return (
     <motion.div
-      drag
       animate={{ x: x, y: y, opacity: 0 }}
       whileInView={{ x: 0, y: 0, opacity: 1 }}
       transition={{ duration: d }}

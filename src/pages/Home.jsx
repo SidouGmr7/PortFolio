@@ -3,15 +3,7 @@ import BG from '../images/bg2.bmp'
 import Scroll from '../components/Scroll'
 import { motion } from 'framer-motion'
 import Button from '../components/Button'
-import {
-  Animator,
-  batch,
-  Fade,
-  MoveOut,
-  ScrollContainer,
-  ScrollPage,
-  Sticky,
-} from 'react-scroll-motion'
+
 
 const home = () => {
   return (
