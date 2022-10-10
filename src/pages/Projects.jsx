@@ -4,6 +4,7 @@ import Kanaghaz from '../images/Kanaghaz.bmp'
 import House from '../images/House.bmp'
 import Chat from '../images/Chat.png'
 import Digital from '../images/Digital.PNG'
+import Event from '../images/Event.bmp'
 
 const Projects = () => {
   return (
@@ -13,20 +14,12 @@ const Projects = () => {
       </p>
       <div className='flex flex-col pt-24'>
         <ProjectCart
-          img={Digital}
-          url='digital-marketing-ebon.vercel.app'
-          github='github.com/SidouGmr7/digitalmarketing'
-          name='Digital Marketing'
-          desc='A digital marketing presentation page'
-          style='md:flex-row-reverse'
-        />
-        <ProjectCart
-          img={Kanaghaz}
-          url='kanaghazdemo-bc29d.web.app'
-          github='github.com/SidouGmr7/ControleInvestissement'
-          name='Controle Investissements'
-          desc='web application to control investment decisions for a company of KANAGHAZ support by artificial intelligence'
-          style='md:flex-row'
+          img={Event}
+          url='organisationevents.vercel.app'
+          github='github.com/SidouGmr7/OrganisationEvents'
+          name='Event Organitation'
+          desc='A web site Event organitation'
+          style='md:flex-row-'
         />
         <ProjectCart
           img={Food}
@@ -34,6 +27,22 @@ const Projects = () => {
           github='github.com/SidouGmr7/DeliveryApp'
           name='Delivery App'
           desc='if you want food this is the best way to deliver food'
+          style='md:flex-row-reverse'
+        />
+        <ProjectCart
+          img={Digital}
+          url='dgitalmarketing.vercel.app'
+          github='github.com/SidouGmr7/DigitalMarketingPresentation'
+          name='Digital Marketing'
+          desc='A digital marketing presentation page'
+          style='md:flex-row'
+        />
+        <ProjectCart
+          img={Kanaghaz}
+          url='kanaghazdemo-bc29d.web.app'
+          github='github.com/SidouGmr7/ControleInvestissement'
+          name='Controle Investissements'
+          desc='web application to control investment decisions for a company of KANAGHAZ support by artificial intelligence'
           style='md:flex-row-reverse'
         />
         <ProjectCart

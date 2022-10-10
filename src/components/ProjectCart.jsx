@@ -18,7 +18,7 @@ const ProjectCart = ({ img, url, github, name, desc, style }) => {
               dark
                 ? 'text-[#27c7b7] before:bg-[#68fff1]'
                 : 'text-rose-600 before:bg-rouse-600'
-            }  bfont-bold uppercase lg:text-4xl md:text-3xl text-2xl relative before:absolute before:rounded-lg before:w-14 before:h-1  before:-bottom-1`}>
+            }  bfont-bold uppercase lg:text-4xl md:text-3xl text-2xl relative before:absolute before:rounded-lg before:w-14 before:h-[3px]  before:-bottom-1`}>
             {name}
           </p>
           <div

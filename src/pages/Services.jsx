@@ -3,11 +3,11 @@ import ServiceItem from '../components/ServiceItem'
 
 const Services = () => {
   return (
-    <div className='relative max-w-6xl lg:h-screen mx-auto  py-28' id='service'>
+    <div className='relative max-w-[90%] lg:h-screen mx-auto  py-28' id='service'>
       <p className='text-2xl text-rose-600 md:text-4xl font-bold text-center pt-4 relative before:absolute before:rounded-lg before:w-20 before:h-1 before:-bottom-3 before:bg-rose-600'>
         My Services
       </p>
-      <div className='grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 justify-center pt-10'>
+      <div className='grid lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-2 justify-center pt-10'>
         <ServiceItem
           Name='FrontEnd'
           About='Create Web Application using React or Angular framework'
@@ -31,7 +31,7 @@ const Services = () => {
         />
         <ServiceItem
           Name='DataBase'
-          About='Manage DataBase with MySql or Firestore DatBase'
+          About='Manage DataBase with MySql or Firestore DataBase'
           bol={true}
           d={0.7}
           x={200}
@@ -41,6 +41,13 @@ const Services = () => {
           About='Create the best content of your website'
           bol={true}
           d={0.5}
+          x={200}
+        />
+            <ServiceItem
+          Name='Animation'
+          About='Animate you website with framer motion'
+          bol={true}
+          d={0.3}
           x={200}
         />
       </div>

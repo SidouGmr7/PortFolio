@@ -1,5 +1,4 @@
 import React from 'react'
-import BG from '../images/bg2.bmp'
 import Scroll from '../components/Scroll'
 import { motion } from 'framer-motion'
 import Button from '../components/Button'
@@ -8,7 +7,6 @@ import Button from '../components/Button'
 const home = () => {
   return (
     <div
-      style={{ backgroundImage: `url(${BG})` }}
       className='bg-fixed h-screen md:p-52 p-20'
       id='home'>
       <div fixed className='flex md:flex-row flex-col items-center'>

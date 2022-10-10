@@ -47,7 +47,7 @@ function Card() {
         <motion.div
           animate={{ x: -200, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
-          className='lg:w-[25%] md:w-[40%] md:max-w-lg max-w-xs mx-auto shadow-2xl  rounded-xl p-10  hover:scale-125 duration-500 transition'>
+          className='lg:w-[25%] md:w-[40%] backdrop-blur-md md:max-w-lg max-w-xs mx-auto shadow-2xl rounded-xl p-10  hover:scale-125 duration-500 transition'>
           <div className='hover:scale-105 duration-500 transition-all ease-in-out '>
             <img
               alt='sidou'

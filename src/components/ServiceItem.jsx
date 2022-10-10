@@ -5,6 +5,7 @@ import { BsCodeSlash } from 'react-icons/bs'
 import { FiDatabase } from 'react-icons/fi'
 import { AiOutlineDesktop } from 'react-icons/ai'
 import { BiBookContent } from 'react-icons/bi'
+import { MdAnimation } from 'react-icons/md'
 import 'primeicons/primeicons.css'
 import { motion } from 'framer-motion'
 import { useContext } from 'react'
@@ -18,7 +19,7 @@ const ServiceItem = ({ Name, About, bol, d, x, y }) => {
       animate={{ x: x, y: y, opacity: 0 }}
       whileInView={{ x: 0, y: 0, opacity: 1 }}
       transition={{ duration: d }}
-      className={`flex flex-col p-8 m-8 shadow-2xl transition border-slate-800 border-2 rounded-[10%] hover:scale-150 sm:w-52 ${
+      className={`flex flex-col p-8 m-8 shadow-2xl transition backdrop-blur-md  rounded-[10%] sm:w-52 ${
         dark
           ? 'bg-slate-700 bg-opacity-10 hover:bg-opacity-40 text-white'
           : ' hover:bg-slate-200 '
@@ -49,6 +50,7 @@ const ServiceItem = ({ Name, About, bol, d, x, y }) => {
           ),
           DataBase: <FiDatabase className='mx-auto text-4xl text-rose-600' />,
           Content: <BiBookContent className='mx-auto text-4xl text-rose-600' />,
+          Animation: <MdAnimation className='mx-auto text-4xl text-rose-600' />,
         }[Name]
       }
       <p
@@ -57,7 +59,9 @@ const ServiceItem = ({ Name, About, bol, d, x, y }) => {
         } }`}>
         {Name}
       </p>
-      <p className='mt-6 text-md text-gray-200 text-center'>{About}</p>
+      <p className={`mt-6 text-md ${dark && 'text-gray-200'} text-center`}>
+        {About}
+      </p>
     </motion.div>
   )
 }
