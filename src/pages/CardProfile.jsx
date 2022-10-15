@@ -10,13 +10,13 @@ function Card() {
   const { dark } = useContext(DarkMode)
 
   return (
-    <div className='relative w-full h-screen md:pt-20 pt-36 ' id='profile'>
+    <div className='relative w-full md:h-screen md:pt-20 pt-12 ' id='profile'>
       <p className='text-2xl text-rose-600 md:text-4xl font-bold text-center before:absolute before:rounded-lg relative before:w-10 before:h-1 before:-bottom-1 before:bg-rose-600'>
         Profile
       </p>
-      <div className='flex pt-12 md:pb-8'>
+      <div className='flex flex-col md:flex-row pt-12 md:pb-8 gap-10'>
         <motion.div
-          className='w-[50%] md:flex hidden transition'
+          className='md:w-[50%] transition'
           animate={{ x: 200, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}>
           <div className='mr-10 pl-10 space-y-5 grid justify-items-center'>
@@ -24,7 +24,7 @@ function Card() {
               Get to know me !
             </h1>
             <p
-              className={`text-lg text-justify  ${
+              className={`md:text-lg text-justify  ${
                 dark ? ' text-gray-200' : 'text-gray-600 font-semibold'
               }`}>
               I'm a Frontend Web Developer building the Front-end of Websites
@@ -47,7 +47,7 @@ function Card() {
         <motion.div
           animate={{ x: -200, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
-          className='lg:w-[25%] md:w-[40%] backdrop-blur-md md:max-w-lg max-w-xs mx-auto shadow-2xl rounded-xl p-10  hover:scale-125 duration-500 transition'>
+          className='lg:w-[25%] md:w-[40%] w-[80%] backdrop-blur-md md:max-w-lg max-w-xs mx-auto shadow-2xl rounded-xl p-10  hover:scale-125 duration-500 transition'>
           <div className='hover:scale-105 duration-500 transition-all ease-in-out '>
             <img
               alt='sidou'

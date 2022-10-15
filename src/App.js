@@ -8,11 +8,13 @@ import ContactMe from './pages/Contact'
 function App() {
   return (
     <DarkModeProvider>
+    <div className='overflow-hidden'>
       <Navbar />
       <Home />
       <Content />
       <ContactMe />
       <Footer />
+    </div>
     </DarkModeProvider>
   )
 }

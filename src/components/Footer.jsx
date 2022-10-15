@@ -24,7 +24,7 @@ function Footer() {
           />
           <SocialItem
             name='Linkedin'
-            href='https://www.linkedin.com/in/sidali-gmr-4bbba21a4/'
+            href='https://www.linkedin.com/in/goumiri-ali-4bbba21a4/'
             Color='text-blue-500 hover:bg-blue-500'
           />
           <SocialItem
