@@ -1,11 +1,11 @@
 import ProjectCart from '../components/ProjectCart'
-import Food from '../images/Food.bmp'
-import Kanaghaz from '../images/Kanaghaz.bmp'
-import House from '../images/House.bmp'
-import Chat from '../images/Chat.png'
-import Digital from '../images/Digital.PNG'
-import Event from '../images/Event.bmp'
-import Foot from '../images/FootState.bmp'
+import Food from '../images/Food.jpg'
+import Kanaghaz from '../images/Kanaghaz.jpg'
+import House from '../images/House.jpg'
+import Chat from '../images/Chat.jpg'
+import Digital from '../images/Digital.jpg'
+import Event from '../images/Event.jpg'
+import Foot from '../images/FootState.jpg'
 
 const Projects = () => {
   return (
