@@ -1,0 +1,38 @@
+[
+    {
+      "Name": "FrontEnd",
+      "About": "Create Web Application using React or Angular framework",
+      "d": 1.7,
+      "x": 200
+    },
+    {
+      "Name": "BackEnd",
+      "About": "Create Backend with nodeJs, Laraval or Firebase",
+      "d": 1.5,
+      "x": 200
+    },
+    {
+      "Name": "Ui UX Design",
+      "About": "Design Web Application with Tailwind ,Materiel UI, PrimeFaces",
+      "d": 1,
+      "x": 200
+    },
+    {
+      "Name": "DataBase",
+      "About": "Manage DataBase with MySql or Firestore DataBase",
+      "d": 0.7,
+      "x": 200
+    },
+    {
+      "Name": "Content",
+      "About": "Create the best content of your website",
+      "d": 0.5,
+      "x": 200
+    },
+    {
+      "Name": "Animation",
+      "About": "Animate you website with framer motion",
+      "d": 0.3,
+      "x": 200
+    }
+]

@@ -1,5 +1,4 @@
 import CardProfile from './CardProfile'
-import Skills from './Skills'
 import { useContext } from 'react'
 import DarkMode from '../context/DarkMode'
 import Services from './Services'
@@ -13,7 +12,6 @@ const Content = () => {
       className={`py-10 sm:px-5 overflow-hidden scrollbar-hide dark bg-opacity-90  ${dark ? 'bg-slate-900' : 'bg-slate-100'} `}>
       <CardProfile />
       <Services />
-      <Skills />
       <Projects />
     </div>
   )
