@@ -1,0 +1,38 @@
+[
+    {
+        "img": "PlanetRepair.jpg",
+        "url": "https://www.planetrepair.fr/",
+        "name": "Planet Repair",
+        "desc": "conditioner, repairs, and spare parts marketplace"
+    },
+    {
+        "img": "BambiniStories.jpg",
+        "url": "https://www.bambinistories.com/",
+        "name": "Bambini Stories",
+        "desc": "Family Conscious Store"
+    },
+    {
+        "img": "e-holzhaff.jpg",
+        "url": "https://www.e-holzhaff.lu/",
+        "name": "e-holzhaff",
+        "desc": "digital timber trade platform"
+    },
+    {
+        "img": "Swaptheroad.jpg",
+        "url": "https://www.swaptheroad.com/",
+        "name": "Swaptheroad",
+        "desc": "Marketplace for exchange Cars"
+    },
+    {
+        "img": "Seancesdesport.jpg",
+        "url": "https://www.seancesdesport.com/",
+        "name": "Seances De Sport",
+        "desc": "Platform for gyms"
+    },
+    {
+        "img": "Yacalouer.jpg",
+        "url": "https://www.yacalouer.com/",
+        "name": "Yacalouer",
+        "desc": "Marketplace"
+    }
+]
