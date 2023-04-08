@@ -9,12 +9,12 @@ export default function ContactMe() {
       whileInView={{ x: 0, opacity: 1 }}
       className='transition max-w-lg text-center m-auto py-52'
       id='contact'>
-      <h1 className='md:text-4xl backdrop-blur-sm p-4 font-bold rounded-full text-rose-600'>
+      <h1 className='md:text-4xl backdrop-blur-sm p-4 font-bold rounded-full text-primary'>
         Interested in working together?
       </h1>
       <a
         href='mailto:goumirisidali@hotmail.com'
-        className='flex hover:scale-105 duration-200 bg-rose-600 transition-all ease-in-out items-center justify-center mt-10 ml-40 md:w-48 w-40 md:text-xl md:p-4 p-2 rounded-sm  cursor-pointer text-gray-200'>
+        className='flex hover:scale-105 duration-200 bg-[#04998a] transition-all ease-in-out items-center justify-center mt-10 ml-40 md:w-48 w-40 md:text-xl md:p-4 p-2 rounded-sm  cursor-pointer text-gray-200'>
         <span className='mr-3 '>Get in touch</span>
         <FaArrowRight color='white' />
       </a>

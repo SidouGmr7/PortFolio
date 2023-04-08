@@ -1,49 +1,49 @@
 [
     {
-      "Name": "React",
+      "title": "React",
       "d": 0.5,
       "x": -200,
       "y": 200
     },
     {
-      "Name": "Angular",
+      "title": "Angular",
       "d": 0.6,
       "x": 0,
       "y": -200
 
     },
     {
-      "Name": "Firebase",
+      "title": "Firebase",
       "d": 0.7,
       "x": 0,
       "y": -200
     },
     {
-      "Name": "Tailwind",
+      "title": "Tailwind",
       "d": 0.8,
       "x": 200,
       "y": 200
     },
     {
-      "Name": "Javascript",
+      "title": "Javascript",
       "d": 0.9,
       "x": -200,
       "y": 200
     },
     {
-      "Name": "PrimeFaces",
+      "title": "PrimeFaces",
       "d": 1,
       "x": 200,
       "y": 200
     },
     {
-      "Name": "MySql",
+      "title": "MySql",
       "d": 1.1,
       "x": 200,
       "y": 200
     },
     {
-      "Name": "Python",
+      "title": "Python",
       "d": 1.2,
       "x": 200,
       "y": 200

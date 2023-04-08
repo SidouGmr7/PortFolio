@@ -47,7 +47,7 @@ function Footer() {
           <p className={`mb-4 ${dark ? 'text-slate-200' : 'text-slate-900'}`}>
             Made by
             <a
-              className='text-rose-600'
+              className='text-primary'
               href='mailto:goumirisidali@hotmail.com'>
               {' '}
               Goumiri Ali

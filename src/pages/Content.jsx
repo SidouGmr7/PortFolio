@@ -9,7 +9,7 @@ const Content = () => {
     const { dark } = useContext(DarkMode)
 
     return (
-        <div className={`py-10 sm:px-5 overflow-hidden scrollbar-hide dark bg-opacity-90  ${dark ? "bg-slate-900" : "bg-slate-100"} `}>
+        <div className={`py-10 sm:px-5 overflow-hidden scrollbar-hide bg-opacity-50  ${dark ? "bg-gray-900" : "bg-slate-100"} `}>
             <CardProfile />
             <Services />
             <MyProjects />

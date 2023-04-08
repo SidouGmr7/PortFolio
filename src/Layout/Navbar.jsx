@@ -1,9 +1,9 @@
 import { motion } from "framer-motion"
 import SidouProfile2 from "../images/SidouProfile2.jpg"
-import NavbarItem from "../components/NavbarItem"
 import { FiSun } from "react-icons/fi"
 import { useContext } from "react"
 import DarkMode from "../context/DarkMode"
+import ScrollIntoView from "react-scroll-into-view"
 
 const Navbar = () => {
     const { dark, changeMode } = useContext(DarkMode)
@@ -16,34 +16,37 @@ const Navbar = () => {
                         whileTap={{ rotate: 180 }}
                         whileHover={{ rotate: 60 }}
                         className={`md:text-xl m-1 p-1 sm:m-2 sm:p-2 rounded-full transition ${
-                            dark ? "text-white hover:bg-white hover:text-black " : "text-black hover:bg-black hover:text-white"
+                            dark
+                                ? "text-white hover:bg-white hover:text-black "
+                                : "text-black hover:bg-black hover:text-white"
                         }`}
-                        onClick={changeMode}>
+                        onClick={null}>
                         <FiSun />
                     </motion.div>
                     <div className='flex items-center gap-2'>
                         <p className={`md:text-xl ${dark && "text-white"}`}>
                             MY {""}
-                            <span className='text-rose-600 font-bold'>P</span>ORT
-                            <span className='text-rose-600 font-bold'>F</span>OLIO
+                            <span className='text-primary font-bold'>P</span>ORT
+                            <span className='text-primary font-bold'>F</span>OLIO
                         </p>
                     </div>
                 </div>
-                <div className='md:flex hidden items-center gap-8 mr-14'>
+                <div className='md:flex hidden gap-8'>
                     <motion.ul
                         initial={{ opacity: 0, x: 200 }}
                         animate={{ opacity: 1, x: 0 }}
                         exit={{ opacity: 0, x: 200 }}
                         className='flex items-center gap-10'>
-                        <NavbarItem Name='Home' Selector='#home' dark={dark} />
-                        <NavbarItem Name='About' Selector='#profile' dark={dark} />
-                        <NavbarItem Name='Skills' Selector='#tech' dark={dark} />
-                        <NavbarItem Name='Service' Selector='#service' dark={dark} />
-                        <NavbarItem Name='My Project' Selector='#projects' dark={dark} />
-                        <NavbarItem Name='Project Contribution' Selector='#projectsc' dark={dark} />
-                        <NavbarItem Name='Contact' Selector='#contact' dark={dark} />
+                        <NavbarItem Name='Home' Selector='#home' />
+                        <NavbarItem Name='About' Selector='#profile' />
+                        <NavbarItem Name='Skills' Selector='#tech' />
+                        <NavbarItem Name='Service' Selector='#service' />
+                        <NavbarItem Name='My Project' Selector='#projects' />
+                        <NavbarItem Name='Project Contribution' Selector='#projectsc' />
+                        <NavbarItem Name='Contact' Selector='#contact' />
                     </motion.ul>
-                    <div className='relative'>
+                </div>
+                    <div className='mr-14'>
                         <motion.img
                             whileTap={{ scale: 0.6 }}
                             src={SidouProfile2}
@@ -51,10 +54,21 @@ const Navbar = () => {
                             alt='userprofile'
                         />
                     </div>
-                </div>
             </div>
         </header>
     )
 }
 
 export default Navbar
+
+const NavbarItem = ({ Selector, Name }) => {
+    const { dark } = useContext(DarkMode)
+    return (
+        <li
+            className={`text-lg hover:scale-110 transition cursor-pointer hover:text-primary ${
+                dark ? "text-white " : "text-black"
+            }`}>
+            <ScrollIntoView selector={Selector}>{Name}</ScrollIntoView>
+        </li>
+    )
+}

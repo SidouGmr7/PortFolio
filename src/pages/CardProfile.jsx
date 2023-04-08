@@ -11,7 +11,7 @@ function Card() {
 
   return (
     <div className='relative w-full md:h-screen md:pt-20 pt-12 ' id='profile'>
-      <p className='text-2xl text-rose-600 md:text-4xl font-bold text-center before:absolute before:rounded-lg relative before:w-10 before:h-1 before:-bottom-1 before:bg-rose-600'>
+      <p className='text-2xl text-primary md:text-4xl font-bold text-center before:absolute before:rounded-lg relative before:w-10 before:h-1 before:-bottom-1 before:bg-secondary'>
         Profile
       </p>
       <div className='flex flex-col md:flex-row pt-12 md:pb-8 gap-10'>
@@ -20,7 +20,7 @@ function Card() {
           animate={{ x: 200, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}>
           <div className='mr-10 pl-10 space-y-5 grid justify-items-center'>
-            <h1 className='text-3xl text-rose-600 pb-5  font-bold '>
+            <h1 className='text-3xl text-primary pb-5  font-bold '>
               Get to know me !
             </h1>
             <p
@@ -61,7 +61,7 @@ function Card() {
                 className={`text-xs sm:text-base 0 pt-2 w-auto ${
                   dark ? 'text-white' : 'text-gray-800 '
                 }`}>
-                <span className='text-rose-600'>IT engineer</span>
+                <span className='text-primary'>IT engineer</span>
               </p>
               <p
                 className={`text-xs sm:text-base 0 pt-2 w-auto ${
@@ -96,7 +96,7 @@ function Card() {
               />
               <SocialItem
                 name='Linkedin'
-                href='https://www.linkedin.com/in/sidali-gmr-4bbba21a4/'
+                href='https://www.linkedin.com/in/goumiri-ali-4bbba21a4/'
                 Color='text-blue-500 hover:bg-blue-500'
               />
               <SocialItem

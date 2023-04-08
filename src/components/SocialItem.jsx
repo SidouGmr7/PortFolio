@@ -16,7 +16,7 @@ const SocialItem = ({ name, href, Color }) => {
       whileHover={{ scale: 1.1 }}
       initial={{ x: 20 }}
       whileInView={{ x: 0, scale: 1 }}
-      className={`text-xl  p-2 m-2 w-9 justify-center ${Color} rounded-full hover:text-white transition-colors duration-300`}
+      className={`text-xl p-2 m-2 w-9 justify-center ${Color} rounded-full hover:text-white transition-colors duration-300`}
       href={href}>
       {
         {

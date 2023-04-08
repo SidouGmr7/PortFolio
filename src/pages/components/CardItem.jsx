@@ -4,7 +4,7 @@ import { useContext } from "react"
 import DarkMode from "../../context/DarkMode"
 import { icon } from "./icons"
 
-const CardItem = ({ Name, About, d, x, y }) => {
+const CardItem = ({ title, About, d, x, y }) => {
   const { dark } = useContext(DarkMode)
 
   return (
@@ -17,9 +17,9 @@ const CardItem = ({ Name, About, d, x, y }) => {
           ? "bg-slate-700 bg-opacity-10 hover:bg-opacity-40 text-white"
           : " hover:bg-slate-200 "
       }`}>
-      {icon(Name)}
-      <p className='mt-6 text-xl text-center text-rose-600 font-semibold'>
-        {Name}
+      {icon(title)}
+      <p className={`mt-6 text-xl text-center ${About ? 'text-primary' : 'text-gray-100'} font-semibold`}>
+        {title}
       </p>
       <p className={`mt-6 text-md ${dark && "text-gray-200"} text-center`}>
         {About}

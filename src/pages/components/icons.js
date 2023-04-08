@@ -17,12 +17,12 @@ export const icon = (Name) => {
     PrimeFaces: <i className='pi pi-prime mx-auto text-4xl text-blue-400'></i>,
     MySql: <GrMysql className='mx-auto text-4xl text-blue-900' />,
     Python: <FaPython className='mx-auto text-4xl text-yellow-600' />,
-    FrontEnd: <AiOutlineDesktop className='mx-auto text-4xl text-rose-600' />,
-    BackEnd: <BsCodeSlash className='mx-auto text-4xl text-rose-600' />,
-    "Ui UX Design": <FaPaintBrush className='mx-auto text-4xl text-rose-600' />,
-    DataBase: <FiDatabase className='mx-auto text-4xl text-rose-600' />,
-    Content: <BiBookContent className='mx-auto text-4xl text-rose-600' />,
-    Animation: <MdAnimation className='mx-auto text-4xl text-rose-600' />,
+    FrontEnd: <AiOutlineDesktop className='mx-auto text-4xl text-primary' />,
+    BackEnd: <BsCodeSlash className='mx-auto text-4xl text-primary' />,
+    "Ui UX Design": <FaPaintBrush className='mx-auto text-4xl text-primary' />,
+    DataBase: <FiDatabase className='mx-auto text-4xl text-primary' />,
+    Content: <BiBookContent className='mx-auto text-4xl text-primary' />,
+    Animation: <MdAnimation className='mx-auto text-4xl text-primary' />,
   }[Name]
   return icons
 }

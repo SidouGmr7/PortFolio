@@ -16,13 +16,13 @@ const home = () => {
             <div className=' md:text-6xl text-4xl font-bold text-white capitalize space-y-4 space-x-10'>
               <h1 className='text-4xl'>hey, i'm</h1>
               <h1>
-                <span className='text-rose-600 ml-4'>G</span>oumiri
-                <span className='text-rose-600 ml-4'>A</span>li
+                <span className='text-primary ml-4'>G</span>oumiri
+                <span className='text-primary ml-4'>A</span>li
               </h1>
               <h1 className='text-2xl'>A Frontend focused</h1>
               <h1 className='text-4xl'>
-                <span className='text-rose-600 ml-4'>W</span>eb
-                <span className='text-rose-600 ml-4'>D</span>eveloper
+                <span className='text-primary ml-4'>W</span>eb
+                <span className='text-primary ml-4'>D</span>eveloper
               </h1>
             </div>
             <div className='flex flex-col items-center  p-4 text-white space-y-2 space-x-5 mr-10'>
@@ -33,8 +33,8 @@ const home = () => {
               <div className='md:flex gap-10 w-[120%]'>
                 <Button Name='Savoir Plus' Selector='#service' />
                 <a
-                  className='bg-rose-700 hover:bg-rose-800 md:scale-125 md:hover:scale-150 transition text-white py-2 px-5 rounded-full'
-                  href='https://drive.google.com/file/d/1i_YQI5jzgC3YIxj9T73vlmrzNpdpwWo2/view?usp=sharing'>
+                  className='bg-[#04998a] hover:bg-[#04998a] md:scale-125 md:hover:scale-150 transition text-white py-2 px-5 rounded-full'
+                  href='https://drive.google.com/file/d/1iXCEz9nfPNJjDy9mdTKDVYTL0kD7r-TX/view?usp=share_link'>
                   Download CV
                 </a>
               </div>

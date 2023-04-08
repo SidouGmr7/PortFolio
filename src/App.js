@@ -1,8 +1,8 @@
 import { DarkModeProvider } from './context/DarkMode'
 import Content from './pages/Content'
 import Home from './pages/Home'
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
+import Navbar from './Layout/Navbar'
+import Footer from './Layout/Footer'
 import ContactMe from './pages/Contact'
 
 function App() {
