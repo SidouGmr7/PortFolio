@@ -10,8 +10,8 @@ function Card() {
   const { dark } = useContext(DarkMode)
 
   return (
-    <div className='relative w-full md:h-screen md:pt-20 pt-12 ' id='profile'>
-      <p className='text-2xl text-primary md:text-4xl font-bold text-center before:absolute before:rounded-lg relative before:w-10 before:h-1 before:-bottom-1 before:bg-secondary'>
+    <div className='relative w-full md:h-screen md:pt-20 pt-12' id='profile'>
+      <p className='headerTitle'>
         Profile
       </p>
       <div className='flex flex-col md:flex-row pt-12 md:pb-8 gap-10'>

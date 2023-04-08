@@ -6,7 +6,7 @@ import DarkMode from "../context/DarkMode"
 import ScrollIntoView from "react-scroll-into-view"
 
 const Navbar = () => {
-    const { dark, changeMode } = useContext(DarkMode)
+    const { dark } = useContext(DarkMode)
 
     return (
         <header className='fixed z-50 pt-4 pb-2 w-screen backdrop-blur-sm'>
@@ -39,8 +39,8 @@ const Navbar = () => {
                         className='flex items-center gap-10'>
                         <NavbarItem Name='Home' Selector='#home' />
                         <NavbarItem Name='About' Selector='#profile' />
-                        <NavbarItem Name='Skills' Selector='#tech' />
                         <NavbarItem Name='Service' Selector='#service' />
+                        <NavbarItem Name='Skills' Selector='#tech' />
                         <NavbarItem Name='My Project' Selector='#projects' />
                         <NavbarItem Name='Project Contribution' Selector='#projectsc' />
                         <NavbarItem Name='Contact' Selector='#contact' />

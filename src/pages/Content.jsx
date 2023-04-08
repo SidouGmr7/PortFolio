@@ -3,7 +3,6 @@ import { useContext } from "react"
 import DarkMode from "../context/DarkMode"
 import Services from "./Services"
 import MyProjects from "./Projects/MyProjects"
-import ProjectsContribution from "./Projects/ProjectsContribution"
 
 const Content = () => {
     const { dark } = useContext(DarkMode)
@@ -13,7 +12,6 @@ const Content = () => {
             <CardProfile />
             <Services />
             <MyProjects />
-            <ProjectsContribution />
         </div>
     )
 }
