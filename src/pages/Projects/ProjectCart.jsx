@@ -5,13 +5,10 @@ const ProjectCart = (props) => {
     const { url, github, name, desc, index } = props
     const img = require("../../images/" + props.img)
 
-    const isOdd = (number) => {
-        return number % 2 !== 0
-    }
     return (
         <div
             className={`md:flex ${
-                isOdd(index) ? "md:flex-row-reverse" : "md:flex-row"
+                index % 2 ? "md:flex-row-reverse" : "md:flex-row"
             } md:items-center md:pt-10 pt-24`}>
             <motion.div
                 animate={{ x: 200, opacity: 0 }}
@@ -33,20 +30,20 @@ const ProjectCart = (props) => {
                 <a href={url}>
                     <img
                         src={img}
-                        alt=''
-                        className='rounded-full hover:rounded-3xl transition-all duration-500 opacity-80'
+                        alt='images'
+                        className='rounded-full hover:rounded-3xl transition-all duration-200 opacity-80'
                     />
                 </a>
                 <div className='absolute bottom-3 right-auto'>
                     <a
                         href={url ?? null}
-                        className='text-primary backdrop-blur-sm   hover:bg-slate-300 hover:bg-opacity-50 transition rounded-xl px-4 p-2 font-semibold md:text-lg text-sm'>
+                        className='text-primary backdrop-blur-lg hover:bg-slate-400 hover:bg-opacity-50 transition rounded-xl px-4 p-2 font-semibold md:text-lg text-sm'>
                         Open
                     </a>
                     {github && (
                         <a
                             href={github}
-                            className='text-primary backdrop-blur-sm hover:bg-slate-300 hover:bg-opacity-50 transition rounded-xl px-4 p-2 font-semibold md:text-lg text-sm'>
+                            className='text-primary backdrop-blur-lg hover:bg-slate-400 hover:bg-opacity-50 transition rounded-xl px-4 p-2 font-semibold md:text-lg text-sm'>
                             Github
                         </a>
                     )}

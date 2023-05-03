@@ -36,14 +36,14 @@ export const servicesIcons = {
 }
 
 export const skillsIcons = {
-    React: <FaReact color='#2196f3' className='mx-auto text-[4rem] ' />,
-    Javascript: <SiJavascript color='#ffdf00' className='mx-auto text-[4rem]' />,
-    Firebase: <SiFirebase color='orange' className='mx-auto text-[4rem]' />,
-    Razzle: <img src={razzle} alt='razzle' className='w-[4rem]'></img>,
-    Angular: <FaAngular className='text-rose-800 mx-auto text-[4rem]' />,
-    Tailwind: <SiTailwindcss color='#00C0A3' className='mx-auto text-[4rem]' />,
-    Python: <FaPython className='mx-auto text-[4rem] text-yellow-600' />,
-    Bootstrap: <FaBootstrap className='mx-auto text-[4rem] text-blue-400' />,
-    Git: <FaGitAlt className='mx-auto text-[4rem] text-red-400' />,
-    MySql: <GrMysql className='mx-auto text-[4rem] text-blue-900' />,
+    React: <FaReact color='#2196f3' className='md:mx-auto text-[4rem] ' />,
+    Javascript: <SiJavascript color='#ffdf00' className='md:mx-auto text-[4rem]' />,
+    Firebase: <SiFirebase color='orange' className='md:mx-auto text-[4rem]' />,
+    Razzle: <img src={razzle} alt='razzle' className='md:mx-auto w-[4rem]'></img>,
+    Angular: <FaAngular className='text-rose-800 md:mx-auto text-[4rem]' />,
+    Tailwind: <SiTailwindcss color='#00C0A3' className='md:mx-auto text-[4rem]' />,
+    Python: <FaPython className='md:mx-auto text-[4rem] text-yellow-600' />,
+    Bootstrap: <FaBootstrap className='md:mx-auto text-[4rem] text-blue-400' />,
+    Git: <FaGitAlt className='md:mx-auto text-[4rem] text-red-400' />,
+    MySql: <GrMysql className='md:mx-auto text-[4rem] text-blue-900' />,
 }
