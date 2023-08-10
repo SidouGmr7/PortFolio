@@ -23,8 +23,8 @@
         "img": "Kanaghaz.jpg",
         "url": "https://kanaghazdemo-bc29d.web.app",
         "github": "https://github.com/SidouGmr7/ControleInvestissement",
-        "name": "Controle Investissements",
-        "desc": "web application to control investment decisions for a company of KANAGHAZ support by artificial intelligence"
+        "name": "Investment Control",
+        "desc": "web application to investment control decisions for a company of KANAGHAZ support by artificial intelligence"
     },
     {
         "img": "House.jpg",
@@ -42,8 +42,6 @@
     },
     {
         "img": "FootState.jpg",
-        "url": "https://footballstategmr.vercel.app",
-        "github": "https://github.com/SidouGmr7/FootballState",
         "name": "FootBall State",
         "desc": "A FootBall Statistics app"
     }

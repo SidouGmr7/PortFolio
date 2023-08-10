@@ -34,5 +34,17 @@
         "url": "https://www.yacalouer.com/",
         "name": "Yacalouer",
         "desc": "Marketplace"
+    },
+    {
+        "img": "Kombelle.png",
+        "url": "https://www.kombelle.com/",
+        "name": "Kombelle",
+        "desc": "Vente d'articles uniques et créatifs"
+    },
+    {
+        "img": "Secondey.png",
+        "url": "https://www.secondey.com/",
+        "name": "Secondey",
+        "desc": "Seconde histoire à ton vêtement"
     }
 ]

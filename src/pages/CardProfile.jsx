@@ -1,45 +1,35 @@
-import React, { useContext } from 'react'
-import SidouProfile from '../images/SidouProfile.jpg'
-import DarkMode from '../context/DarkMode'
-import Scroll from '../components/Scroll'
-import SocialItem from '../components/SocialItem'
-import { motion } from 'framer-motion'
-import Button from '../components/Button'
+import React from "react"
+import SidouProfile from "../images/SidouProfile.jpg"
+import Scroll from "../components/Scroll"
+import SocialItem from "../components/SocialItem"
+import { motion } from "framer-motion"
+import Button from "../components/Button"
 
 function Card() {
-  const { dark } = useContext(DarkMode)
-
   return (
-    <div className='relative w-full md:h-screen md:pt-20 pt-12' id='profile'>
-      <p className='headerTitle'>
-        Profile
-      </p>
+    <div className='relative w-full lg:h-screen md:pt-20 pt-12' id='profile'>
+      <p className='headerTitle'>Profile</p>
       <div className='flex flex-col md:flex-row pt-12 md:pb-8 gap-10'>
         <motion.div
           className='md:w-[50%] transition'
           animate={{ x: 200, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}>
+          whileInView={{ x: 0, opacity: 1 }}
+        >
           <div className='mr-10 pl-10 space-y-5 grid justify-items-center'>
-            <h1 className='text-3xl text-primary pb-5  font-bold '>
-              Get to know me !
-            </h1>
-            <p
-              className={`md:text-lg text-justify  ${
-                dark ? ' text-gray-200' : 'text-gray-600 font-semibold'
-              }`}>
-              I'm a Frontend Web Developer building the Front-end of Websites
-              and Web Applications that leads to the success of the overall
-              product. Check out some of my work in the Projects section.
+            <h1 className='text-3xl text-primary pb-5  font-bold '>Get to know me !</h1>
+            <p className='md:text-lg text-justify text-gray-200'>
+              I'm a Frontend Web Developer building the Front-end of Websites and Web Applications
+              that leads to the success of the overall product. Check out some of my work in the
+              Projects section.
               <br />
               <br />
-              I also like sharing content related to the stuff that I have
-              learned over the years in Web Development so it can help other
-              people of the Dev Community.
+              I also like sharing content related to the stuff that I have learned over the years in
+              Web Development so it can help other people of the Dev Community.
               <br />
               <br />
-              I'm open to Job opportunities where I can contribute, learn and
-              grow. If you have a good opportunity that matches my skills and
-              experience then don't hesitate to contact me.
+              I'm open to Job opportunities where I can contribute, learn and grow. If you have a
+              good opportunity that matches my skills and experience then don't hesitate to contact
+              me.
             </p>
             <Button Name='Contact Me' Selector='#contact' />
           </div>
@@ -47,7 +37,8 @@ function Card() {
         <motion.div
           animate={{ x: -200, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
-          className='lg:w-[25%] md:w-[40%] w-[80%] backdrop-blur-md md:max-w-lg max-w-xs mx-auto shadow-2xl rounded-xl p-10  hover:scale-125 duration-500 transition'>
+          className='lg:w-[25%] md:w-[40%] w-[80%] md:max-w-lg max-w-xs mx-auto shadow-2xl rounded-xl p-10  hover:scale-125 duration-500 transition'
+        >
           <div className='hover:scale-105 duration-500 transition-all ease-in-out '>
             <img
               alt='sidou'
@@ -57,29 +48,15 @@ function Card() {
           </div>
           <div className='text-center pt-2'>
             <div className='md:bg-slate-300 md:bg-opacity-10 hover:scale-105 duration-500 transition-all md:p-0 md:mx-0 p-4 -mx-10 rounded-full mb-1'>
-              <p
-                className={`text-xs sm:text-base 0 pt-2 w-auto ${
-                  dark ? 'text-white' : 'text-gray-800 '
-                }`}>
+              <p className='text-xs sm:text-base 0 pt-2 w-autotext-white'>
                 <span className='text-primary'>IT engineer</span>
               </p>
-              <p
-                className={`text-xs sm:text-base 0 pt-2 w-auto ${
-                  dark ? 'text-white' : 'text-gray-800 '
-                }`}>
-                FrontEnd developer
-              </p>
-              <p
-                className={`text-xs  sm:text-base  pt-2 px-5 w-auto inline-block ${
-                  dark ? 'text-white' : 'text-gray-600'
-                }`}>
+              <p className='text-xs sm:text-base 0 pt-2 w-auto text-white'>FrontEnd developer</p>
+              <p className='text-xs sm:text-base pt-2 px-5 w-auto inline-blocktext-white'>
                 <span className='text-sky-400'>React</span> /
                 <span className='text-yellow-300'> Firebase</span>
               </p>
-              <p
-                className={`text-xs  sm:text-base 0 pt-2 pb-3 w-auto ${
-                  dark ? 'text-zinc-400' : 'text-gray-800'
-                }`}>
+              <p className='text-xs sm:text-base 0 pt-2 pb-3 w-auto text-zinc-400'>
                 Number: 0664784130
               </p>
             </div>
@@ -118,7 +95,7 @@ function Card() {
           </div>
         </motion.div>
       </div>
-      <Scroll selector='#service' bottom='0' />
+      <Scroll selector='#service' />
     </div>
   )
 }

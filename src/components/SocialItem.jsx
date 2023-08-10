@@ -1,5 +1,5 @@
-import 'primeicons/primeicons.css'
-import { motion } from 'framer-motion'
+import "primeicons/primeicons.css"
+import { motion } from "framer-motion"
 
 import {
   FaGithub,
@@ -8,7 +8,7 @@ import {
   FaRegEnvelope,
   FaInstagram,
   FaFacebookMessenger,
-} from 'react-icons/fa'
+} from "react-icons/fa"
 
 const SocialItem = ({ name, href, Color }) => {
   return (
@@ -17,7 +17,8 @@ const SocialItem = ({ name, href, Color }) => {
       initial={{ x: 20 }}
       whileInView={{ x: 0, scale: 1 }}
       className={`text-xl p-2 m-2 w-9 justify-center ${Color} rounded-full hover:text-white transition-colors duration-300`}
-      href={href}>
+      href={href}
+    >
       {
         {
           Github: <FaGithub />,

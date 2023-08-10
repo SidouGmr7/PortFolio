@@ -1,6 +1,6 @@
-import React, { useContext } from 'react'
-import SocialItem from '../components/SocialItem'
-import DarkMode from '../context/DarkMode'
+import React, { useContext } from "react"
+import SocialItem from "../components/SocialItem"
+import DarkMode from "../context/DarkMode"
 
 function Footer() {
   const { dark } = useContext(DarkMode)
@@ -8,9 +8,8 @@ function Footer() {
   return (
     <>
       <div
-        className={`py-10  overflow-hidden text-gray-200 ${
-          dark ? 'bg-slate-900' : 'bg-slate-200'
-        }`}>
+        className={`py-10  overflow-hidden text-gray-200 ${dark ? "bg-slate-900" : "bg-slate-200"}`}
+      >
         <div className='flex gap-2 justify-center mt-4 md:gap-8'>
           <SocialItem
             name='Github'
@@ -44,12 +43,10 @@ function Footer() {
           />
         </div>
         <div className='flex align-center justify-center mt-4 md:text-xl'>
-          <p className={`mb-4 ${dark ? 'text-slate-200' : 'text-slate-900'}`}>
+          <p className={`mb-4 ${dark ? "text-slate-200" : "text-slate-900"}`}>
             Made by
-            <a
-              className='text-primary'
-              href='mailto:goumirisidali@hotmail.com'>
-              {' '}
+            <a className='text-primary' href='mailto:goumirisidali@hotmail.com'>
+              {" "}
               Goumiri Ali
             </a>
           </p>
