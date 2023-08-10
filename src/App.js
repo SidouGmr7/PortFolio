@@ -10,17 +10,15 @@ import MyProjects from "./pages/MyProjects"
 function App() {
   return (
     <DarkModeProvider>
-      <div className='overflow-hidden'>
-        <Navbar />
-        <Home />
-        <div className='py-10 sm:px-5 overflow-hidden scrollbar-hide bg-opacity-50 bg-gray-900'>
-          <CardProfile />
-          <Services />
-          <MyProjects />
-        </div>
-        <ContactMe />
-        <Footer />
+      <Navbar />
+      <Home />
+      <div className='sm:px-28 bg-opacity-80 bg-slate-900'>
+        <CardProfile />
+        <Services />
+        <MyProjects />
       </div>
+      <ContactMe />
+      <Footer />
     </DarkModeProvider>
   )
 }
