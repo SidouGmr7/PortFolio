@@ -1,7 +1,6 @@
 import React from "react"
 import Scroll from "../components/Scroll"
 import { motion } from "framer-motion"
-import Button from "../components/Button"
 
 const home = () => {
   return (

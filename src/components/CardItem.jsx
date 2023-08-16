@@ -29,7 +29,7 @@ const CardItem = (props) => {
           } font-semibold`}
         />
         {!!about && (
-          <CardContent className='mt-6 text-md text-gray-200 text-center'>{about}</CardContent>
+          <CardContent className='text-md text-gray-200 text-center'>{about}</CardContent>
         )}
       </motion.Card>
     </Grid>

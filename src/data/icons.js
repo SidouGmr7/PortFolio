@@ -17,15 +17,15 @@ export const servicesIcons = {
   },
   BackEnd: {
     icon: <BsCodeSlash className={style} />,
-    about: "Create Backend with nodeJs, Python(flask) or Firebase",
+    about: "Create Backend with nodeJs, Python(flask) or use Firebase",
   },
-  "Ui UX Design": {
+  "Ui UX": {
     icon: <FaPaintBrush className={style} />,
     about: "Design Web Application with Tailwind ,Materiel UI, PrimeFaces",
   },
   DataBase: {
     icon: <FiDatabase className={style} />,
-    about: "Manage DataBase with MySql or Firestore DataBase",
+    about: "Manage DataBase with Sql, noSql or Firestore DataBase",
   },
   Content: {
     icon: <BiBookContent className={style} />,
