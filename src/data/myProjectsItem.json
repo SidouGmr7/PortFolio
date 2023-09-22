@@ -6,6 +6,12 @@
         "desc": "A web site Event organitation"
     },
     {
+        "img": "News.jpg",
+        "url": "https://sport-news.vercel.app/",
+        "name": "NouvellActu",
+        "desc": "Your Source for Fresh Information"
+    },
+    {
         "img": "Food.jpg",
         "url": "https://deliveryfoodgmr.vercel.app",
         "github": "https://github.com/SidouGmr7/DeliveryApp",
