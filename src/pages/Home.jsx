@@ -31,7 +31,7 @@ const home = () => {
             <div className='md:flex gap-10 w-[120%]'>
               <a
                 className='bg-[#04998a] hover:bg-[#04998a] md:scale-125 md:hover:scale-150 transition text-white py-2 px-5 rounded-full'
-                href='https://drive.google.com/file/d/1jdHbBSMzMXwMKRfThB1tVTvmiM16tXhX/view?usp=share_link'
+                href='https://drive.google.com/file/d/1RqTPBu55SUCI4J0zyiI7R9r-UHBM-z-k/view?usp=sharing'
               >
                 Download CV
               </a>
