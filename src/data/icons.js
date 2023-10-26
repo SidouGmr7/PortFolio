@@ -8,7 +8,7 @@ import { MdAnimation } from "react-icons/md"
 import { TbBrandNextjs } from "react-icons/tb"
 import { DiNodejsSmall } from "react-icons/di"
 
-const style = 'mx-auto text-[4rem] text-primary'
+const style = 'mx-auto md:text-[4rem] text-4xl text-primary'
 
 export const servicesIcons = {
   FrontEnd: {

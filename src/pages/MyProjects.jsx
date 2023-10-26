@@ -27,19 +27,19 @@ const MyProjects = () => {
             <SectionWrapper
                 id='with'
                 title="I'm proud to have collaborated with some awesome companies"
-                pClassName='mb-10 text-3xl text-white text-center'
+                pClassName='mb-10 md:text-2xl text-white text-center'
             >
-                <Grid container mt={10}>
+                <Grid container className='lg:px-48'>
                     {img.map((title, index) => {
                         const width = isMobile
                             ? index < 3
-                                ? '90%'
+                                ? '100%'
                                 : ''
                             : index > 2
-                            ? '50%'
-                            : '40%'
+                            ? '80%'
+                            : '60%'
                         return (
-                            <Grid xs={4} sm={4} md={4} lg={4} className='md:p-20 p-10'>
+                            <Grid xs={4} className='md:p-20 p-10'>
                                 <div className='flex justify-center items-center'>
                                     <img src={title} alt='images' style={{ width: width }} />
                                 </div>

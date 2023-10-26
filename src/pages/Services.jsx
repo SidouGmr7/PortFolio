@@ -11,7 +11,7 @@ const Services = () => {
                 selector='#tech'
                 className='lg:h-screen'
             >
-                <div className='flex flex-wrap p-4 justify-center pt-10'>
+                <div className='flex flex-wrap p-4 justify-center md:pt-10'>
                     {Object.keys(servicesIcons).map((name, index) => (
                         <ServiceItem
                             title={name}

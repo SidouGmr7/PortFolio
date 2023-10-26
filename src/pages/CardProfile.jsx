@@ -17,9 +17,7 @@ function Card() {
                 whileInView={{ x: 0, opacity: 1 }}
             >
                 <div className='mr-10 pl-10 space-y-5 grid justify-items-center'>
-                    <p
-                        className='md:text-lg text-justify text-gray-200 lg:m-20'
-                    >
+                    <p className='md:text-lg text-justify text-gray-200 lg:m-20'>
                         I'm a Frontend Web Developer building the Front-end of Websites and Web
                         Applications that leads to the success of the overall product. Check out
                         some of my work in the Projects section.

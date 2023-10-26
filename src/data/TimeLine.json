@@ -1,26 +1,30 @@
 [
     {
-        "status": "Master degree ( IT engineer ) ",
+        "status": "Master degree (IT engineer)",
         "date": "2016 - 2022",
-        "icon": "pi pi-shopping-cart",
-        "color": "#9C27B0"
+        "icon": "pi pi-building",
+        "color": "#9C27B0",
+        "text": "I graduated after 6 years of studying. I immediately found a job as a front-end developer."
     },
     {
-        "status": "React Developer and designer ( Freelance )",
+        "status": "React Developer and designer",
         "date": "2019 - 2022",
-        "icon": "pi pi-check",
-        "color": "#607D8B"
+        "icon": "pi pi-sitemap",
+        "color": "#607D8B",
+        "text": "Working with multiple clients to create the best website presentation and best design."
     },
     {
         "status": "Web Development Intern",
         "date": "2021 - 2022",
-        "icon": "pi pi-cog",
-        "color": "#673AB7"
+        "icon": "pi pi-desktop",
+        "color": "#673AB7",
+        "text": "Developed a web application for data management and decision support in investment control using Artificial Intelligence."
     },
     {
-        "status": "Frontend Web Developer",
+        "status": "Front-End Web Developer",
         "date": "2022 - 2023",
-        "icon": "pi pi-shopping-cart",
-        "color": "#FF9800"
+        "icon": "pi pi-briefcase",
+        "color": "#FF9800",
+        "text": "I worked as a front-end developer for one year and three months, contributing to numerous projects."
     }
 ]
