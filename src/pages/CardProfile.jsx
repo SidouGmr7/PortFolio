@@ -8,7 +8,7 @@ function Card() {
         <SectionWrapper
             id='profile'
             selector='#timeLine'
-            className='lg:h-screen'
+            className='lg:h-screen px-10 lg:px-60'
             title='Get to know me !'
         >
             <motion.div
@@ -16,8 +16,8 @@ function Card() {
                 animate={{ x: 200, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
             >
-                <div className='mr-10 pl-10 space-y-5 grid justify-items-center'>
-                    <p className='md:text-lg text-justify text-gray-200 lg:m-20'>
+                <div className='space-y-5 md:space-y-0 grid justify-items-center'>
+                    <p className='md:text-lg text-sm text-center text-gray-200 lg:m-20'>
                         I'm a Frontend Web Developer building the Front-end of Websites and Web
                         Applications that leads to the success of the overall product. Check out
                         some of my work in the Projects section.
