@@ -40,7 +40,7 @@ const ProjectCart = (props) => {
                     {url && (
                       <a
                         href={url}
-                        className='text-primary backdrop-blur-lg hover:bg-slate-600 hover:bg-opacity-50 transition rounded-xl px-4 p-2 font-semibold lg:text-lg md:text-md text-xs absolute bottom-1 left-1 border border-[#68fff1]'
+                        className='text-primary backdrop-blur-lg hover:bg-slate-600 hover:bg-opacity-50 transition rounded-xl px-4 p-2 font-semibold lg:text-lg md:text-md text-xs absolute bottom-1 left-1 border border-[#6366f1]'
                       >
                         Visit Website
                       </a>
@@ -48,7 +48,7 @@ const ProjectCart = (props) => {
                     {github && (
                       <a
                         href={github}
-                        className='text-primary backdrop-blur-lg hover:bg-slate-600 hover:bg-opacity-50 transition rounded-xl px-4 p-2 font-semibold lg:text-lg md:text-md text-xs absolute bottom-1 right-1 border border-[#68fff1]'
+                        className='text-primary backdrop-blur-lg hover:bg-slate-600 hover:bg-opacity-50 transition rounded-xl px-4 p-2 font-semibold lg:text-lg md:text-md text-xs absolute bottom-1 right-1 border border-[#6366f1]'
                       >
                         Github
                       </a>

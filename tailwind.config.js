@@ -4,10 +4,10 @@ module.exports = {
         extend: {
             backgroundColor: {
                 primary: "#27c7b7",
-                secondary: "#68fff1",
+                secondary: "#6366f1",
             },
             textColor: {
-                primary: "#68fff1",
+                primary: "#6366f1",
             },
             borderColor: {
                 "custom-green": "#00FF00",

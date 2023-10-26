@@ -14,7 +14,7 @@ export default function ContactMe() {
       </h1>
       <a
         href='mailto:goumirisidali@hotmail.com'
-        className='flex hover:scale-105 duration-200 bg-[#04998a] transition-all ease-in-out items-center justify-center mt-10 ml-40 md:w-48 w-40 md:text-xl md:p-4 p-2 rounded-sm  cursor-pointer text-gray-200'
+        className='flex hover:scale-105 duration-200 bg-[#6366f1] transition-all ease-in-out items-center justify-center mt-10 ml-40 md:w-48 w-40 md:text-xl md:p-4 p-2 rounded-sm  cursor-pointer text-gray-200'
       >
         <span className='mr-3 '>Get in touch</span>
         <FaArrowRight color='white' />

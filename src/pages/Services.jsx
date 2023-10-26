@@ -1,36 +1,47 @@
-import Scroll from "../components/Scroll"
-import ServiceItem from "../components/CardItem"
-import { servicesIcons, skillsIcons } from "../data/icons"
+import ServiceItem from '../components/CardItem'
+import { servicesIcons, skillsIcons } from '../data/icons'
+import { SectionWrapper } from '../components/SectionWrapper'
 
 const Services = () => {
-  return (
-    <>
-      <div className='relative w-full lg:h-screen md:pt-20 pt-12' id='service'>
-        <p className='headerTitle'>My Services</p>
-        <div className='flex flex-wrap p-4 justify-center pt-10'>
-          {Object.keys(servicesIcons).map((name, index) => (
-            <ServiceItem
-              title={name}
-              index={index}
-              key={index}
-              about={servicesIcons[name].about}
-              icon={servicesIcons[name].icon}
-            />
-          ))}
-        </div>
-        <Scroll selector='#tech' />
-      </div>
-      <div className='relative w-full lg:h-screen md:pt-20 pt-12' id='tech'>
-        <p className='headerTitle'>Tech I Use</p>
-        <div className='flex flex-wrap p-4 justify-center pt-10'>
-          {Object.keys(skillsIcons).map((name, index) => (
-            <ServiceItem title={name} index={index} key={index} icon={skillsIcons[name]} />
-          ))}
-        </div>
-        <Scroll selector='#projectsc' />
-      </div>
-    </>
-  )
+    return (
+        <>
+            <SectionWrapper
+                id='service'
+                title='My Services'
+                selector='#tech'
+                className='lg:h-screen'
+            >
+                <div className='flex flex-wrap p-4 justify-center pt-10'>
+                    {Object.keys(servicesIcons).map((name, index) => (
+                        <ServiceItem
+                            title={name}
+                            index={index}
+                            key={index}
+                            about={servicesIcons[name].about}
+                            icon={servicesIcons[name].icon}
+                        />
+                    ))}
+                </div>
+            </SectionWrapper>
+            <SectionWrapper
+                id='tech'
+                title='Tech I Use'
+                selector='#projectsc'
+                className='lg:h-screen'
+            >
+                <div className='flex flex-wrap p-4 justify-center pt-10'>
+                    {Object.keys(skillsIcons).map((name, index) => (
+                        <ServiceItem
+                            title={name}
+                            index={index}
+                            key={index}
+                            icon={skillsIcons[name]}
+                        />
+                    ))}
+                </div>
+            </SectionWrapper>
+        </>
+    )
 }
 
 export default Services

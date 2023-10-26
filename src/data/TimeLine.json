@@ -1,0 +1,26 @@
+[
+    {
+        "status": "Master degree ( IT engineer ) ",
+        "date": "2016 - 2022",
+        "icon": "pi pi-shopping-cart",
+        "color": "#9C27B0"
+    },
+    {
+        "status": "React Developer and designer ( Freelance )",
+        "date": "2019 - 2022",
+        "icon": "pi pi-check",
+        "color": "#607D8B"
+    },
+    {
+        "status": "Web Development Intern",
+        "date": "2021 - 2022",
+        "icon": "pi pi-cog",
+        "color": "#673AB7"
+    },
+    {
+        "status": "Frontend Web Developer",
+        "date": "2022 - 2023",
+        "icon": "pi pi-shopping-cart",
+        "color": "#FF9800"
+    }
+]

@@ -6,6 +6,7 @@ import ContactMe from './pages/Contact'
 import CardProfile from './pages/CardProfile'
 import Services from './pages/Services'
 import MyProjects from './pages/MyProjects'
+import TimeLine from './pages/TimeLine'
 
 function App() {
     return (
@@ -13,8 +14,9 @@ function App() {
             <div className='overflow-hidden'>
                 <Navbar />
                 <Home />
-                <div className='sm:px-28 bg-opacity-80 bg-slate-900 overflow-hidden scrollbar-hide'>
+                <div className='sm:px-40 bg-opacity-95 bg-[#111827] overflow-hidden scrollbar-hide'>
                     <CardProfile />
+                    <TimeLine />
                     <Services />
                     <MyProjects />
                 </div>

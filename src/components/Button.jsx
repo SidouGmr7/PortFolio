@@ -9,7 +9,7 @@ const Button = ({ Name, Selector }) => {
             whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
         >
-            <button className='bg-[#04998a] hover:bg-[#04998a] md:scale-125 md:hover:scale-150 transition text-white py-2 px-5 rounded-full'>
+            <button className='bg-[#6366f1] hover:bg-[#6366f1] md:scale-125 md:hover:scale-150 transition text-white py-2 px-5 rounded-full'>
                 <ScrollIntoView selector={Selector}>{Name}</ScrollIntoView>
             </button>
         </motion.div>
