@@ -40,7 +40,7 @@ export const skillsIcons = {
   Angular: <FaAngular className={`${style} text-rose-800`} />,
   Tailwind: <SiTailwindcss color='#00C0A3' className={style} />,
   Python: <FaPython className={`${style} text-yellow-600`} />,
-  Bootstrap: <DiNodejsSmall className={`${style} text-green-500`} />,
+  NodeJS: <DiNodejsSmall className={`${style} text-green-500`} />,
   Git: <FaGitAlt className={`${style} text-red-400`} />,
   MySql: <GrMysql className={`${style} text-blue-900`} />,
   NextJS: <TbBrandNextjs className={`${style} text-black`} />,
