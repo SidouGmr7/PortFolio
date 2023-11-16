@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import SidouProfile2 from '../images/SidouProfile2.jpg'
 import { FiSun } from 'react-icons/fi'
 import ScrollIntoView from 'react-scroll-into-view'
+import { useLocation, useNavigate } from 'react-router-dom'
 
 const Navbar = () => {
     return (
@@ -56,10 +57,20 @@ const Navbar = () => {
 export default Navbar
 
 const NavbarItem = ({ Selector, Name }) => {
+    const navigate = useNavigate()
+    const location = useLocation()
+    const searchParams = new URLSearchParams(location.search)
+    const isActive = Selector.slice(1) === searchParams.get('section')
+
     return (
         <li className='text-lg hover:scale-110 transition cursor-pointer text-white'>
             <ScrollIntoView selector={Selector}>
-                <p className='hover:text-primary'>{Name}</p>
+                <p
+                    className={`hover:text-primary ${isActive ? 'text-primary' : ''} `}
+                    onClick={() => navigate(`?section=${Selector.slice(1)}`)}
+                >
+                    {Name}
+                </p>
             </ScrollIntoView>
         </li>
     )

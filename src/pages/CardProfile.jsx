@@ -8,7 +8,7 @@ function Card() {
         <SectionWrapper
             id='profile'
             selector='#timeLine'
-            className='lg:h-screen px-10 lg:px-60'
+            className='lg:h-screen px-10 xl:px-60'
             title='Get to know me !'
         >
             <motion.div
