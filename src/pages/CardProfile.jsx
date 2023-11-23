@@ -2,6 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import Button from '../components/Button'
 import { SectionWrapper } from '../components/SectionWrapper'
+import Box from '@mui/material/Box'
 
 function Card() {
     return (
@@ -16,7 +17,8 @@ function Card() {
                 animate={{ x: 200, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
             >
-                <div className='space-y-5 md:space-y-0 grid justify-items-center'>
+                <Box sx={{ display: 'grid', justifyItems: 'center' }}>
+                    {' '}
                     <p className='md:text-lg text-sm text-center text-gray-200 lg:m-20'>
                         I'm a Frontend Web Developer building the Front-end of Websites and Web
                         Applications that leads to the success of the overall product. Check out
@@ -33,7 +35,7 @@ function Card() {
                         hesitate to contact me.
                     </p>
                     <Button Name='Contact Me' Selector='#contact' />
-                </div>
+                </Box>{' '}
             </motion.div>
         </SectionWrapper>
     )

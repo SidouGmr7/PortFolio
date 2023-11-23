@@ -1,10 +1,13 @@
 import { useState } from 'react'
 import 'primeicons/primeicons.css'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Grid } from '@mui/material'
+import { Grid, Chip, useMediaQuery ,Box} from '@mui/material'
+import { FaFirefoxBrowser, FaGithub } from 'react-icons/fa'
+import { Chips } from './Chips'
 
 const ProjectCart = (props) => {
-    const { url, github, name, desc } = props
+    const { url, github, name, desc, frameworks, contribution } = props
+    const isMobile = useMediaQuery('(max-width: 700px)')
     const [isHovered, setIsHovered] = useState(false)
     const img = require('../images/' + props.img)
 
@@ -14,7 +17,7 @@ const ProjectCart = (props) => {
                 animate={{ x: -100, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 onMouseEnter={() => setIsHovered(true)}
-                onMouseLeave={() => setIsHovered(false)}
+                // onMouseLeave={() => setIsHovered(false)}
                 className='transition-all duration-1000 '
             >
                 <div className='rounded-xl relative overflow-hidden group'>
@@ -30,28 +33,66 @@ const ProjectCart = (props) => {
                                 {isHovered && (
                                     <>
                                         <div className='items-center text-center lg:mb-10'>
-                                            <p className='text-primary uppercase lg:text-3xl md:text-md text-sm'>
+                                            <p className='text-primary uppercase xl:text-2xl lg:text-md text-xs'>
                                                 {name}
                                             </p>
-                                            <div className='hidden md:block text-gray-300 capitalize text-lg mx-auto pt-4'>
+                                            <div className='hidden xl:block text-gray-300 capitalize text-md mx-auto pt-4'>
                                                 {desc}
                                             </div>
                                         </div>
-                                        {url && (
-                                            <a
-                                                href={url}
-                                                className='text-primary backdrop-blur-lg hover:bg-slate-600 hover:bg-opacity-50 transition rounded-xl md:px-4 p-1 md:font-semibold lg:text-lg md:text-md text-xs absolute bottom-1 left-1 border border-[#6366f1]'
-                                            >
-                                                Visit Website
-                                            </a>
+                                        <div className='flex flex-row space-x-2 absolute top-3 right-3'>
+                                            {github && !contribution && (
+                                                <FaGithub
+                                                    href={github}
+                                                    className='md:text-2xl hover:scale-150 transition'
+                                                    color='#010409'
+                                                />
+                                            )}
+                                            {url && !contribution && (
+                                                <FaFirefoxBrowser
+                                                    href={url}
+                                                    className='md:text-2xl hover:scale-150 transition'
+                                                    color='#fd414a'
+                                                />
+                                            )}
+                                        </div>
+                                        {url && contribution && (
+                                            <div className='backdrop-blur-lg hover:bg-slate-600 hover:bg-opacity-50 transition rounded-full md:font-semibold absolute bottom-1 left-50%'>
+                                                <Chip
+                                                    icon={
+                                                        <FaFirefoxBrowser
+                                                            href={url}
+                                                            className='md:text-xl'
+                                                            color='#fd414a'
+                                                        />
+                                                    }
+                                                    label='Visit Website'
+                                                    color='primary'
+                                                    variant='outlined'
+                                                    sx={{
+                                                        ...(isMobile && {
+                                                            fontSize: '0.5rem',
+                                                            width: '5rem',
+                                                            height: '1rem',
+                                                        }),
+                                                        ...(!isMobile && {
+                                                            marginBottom: '0.4rem',
+                                                            padding: '1.2rem',
+                                                        }),
+                                                    }}
+                                                />
+                                            </div>
                                         )}
-                                        {github && (
-                                            <a
-                                                href={github}
-                                                className='text-primary backdrop-blur-lg hover:bg-slate-600 hover:bg-opacity-50 transition rounded-xl md:px-4 p-1 md:font-semibold lg:text-lg md:text-md text-xs absolute bottom-1 right-1 border border-[#6366f1]'
+                                        {frameworks && (
+                                            <Box
+                                                sx={{
+                                                    position: 'absolute',
+                                                    bottom: { xs: 1, md: 3 },
+                                                    left: { xs: 1, md: 2 },
+                                                }}
                                             >
-                                                Github
-                                            </a>
+                                                <Chips frameworks={frameworks} />
+                                            </Box>
                                         )}
                                     </>
                                 )}

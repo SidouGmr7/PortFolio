@@ -1,4 +1,3 @@
-import { DarkModeProvider } from './context/DarkMode'
 import Home from './pages/Home'
 import Navbar from './Layout/Navbar'
 import Footer from './Layout/Footer'
@@ -7,10 +6,19 @@ import CardProfile from './pages/CardProfile'
 import Services from './pages/Services'
 import MyProjects from './pages/MyProjects'
 import TimeLine from './pages/TimeLine'
+import { createTheme, ThemeProvider } from '@mui/material/styles'
+
+const theme = createTheme({
+    palette: {
+        primary: {
+            main: '#6366f1',
+        },
+    },
+})
 
 function App() {
     return (
-        <DarkModeProvider>
+        <ThemeProvider theme={theme}>
             <div className='overflow-hidden'>
                 <Navbar />
                 <Home />
@@ -23,7 +31,7 @@ function App() {
                 <ContactMe />
                 <Footer />
             </div>
-        </DarkModeProvider>
+        </ThemeProvider>
     )
 }
 export default App

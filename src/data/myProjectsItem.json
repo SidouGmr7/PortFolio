@@ -3,52 +3,60 @@
         "img": "Event.jpg",
         "url": "http://harvestcaravane.dz",
         "name": "Event Organitation",
-        "desc": "A web site Event organitation"
+        "desc": "A web site Event organitation",
+        "frameworks": ["React", "Tailwind"]
     },
     {
         "img": "News.jpg",
         "url": "https://sport-news.vercel.app/",
         "name": "NouvellActu",
-        "desc": "Your Source for Fresh Information"
+        "desc": "Your Source for Fresh Information",
+        "frameworks": ["NextJS", "Firebase", "MateriaUI"]
     },
     {
         "img": "Food.jpg",
         "url": "https://deliveryfoodgmr.vercel.app",
         "github": "https://github.com/SidouGmr7/DeliveryApp",
         "name": "Delivery App",
-        "desc": "if you want food this is the best way to deliver food"
+        "desc": "if you want food this is the best way to deliver food",
+        "frameworks": ["React", "Firebase"]
     },
     {
         "img": "Digital.jpg",
         "url": "https://dgitalmarketing.vercel.app",
         "github": "https://github.com/SidouGmr7/DigitalMarketingPresentation",
         "name": "Digital Marketing",
-        "desc": "A digital marketing presentation page"
+        "desc": "A digital marketing presentation page",
+        "frameworks": ["React", "Tailwind"]
     },
     {
         "img": "Kanaghaz.jpg",
         "url": "https://kanaghazdemo-bc29d.web.app",
         "github": "https://github.com/SidouGmr7/ControleInvestissement",
         "name": "Investment Control",
-        "desc": "web application to investment control decisions for a company of KANAGHAZ support by artificial intelligence"
+        "desc": "web application to investment control decisions for a company of KANAGHAZ support by artificial intelligence",
+        "frameworks": ["Angular", "Firebase", "Tailwind"]
     },
     {
         "img": "House.jpg",
         "url": "https://house-gmr.vercel.app",
         "github": "https://github.com/SidouGmr7/HouseMarketPlace",
         "name": "House Market Place",
-        "desc": "If you want to buy and rent a house, this site is the best to meet your requests"
+        "desc": "If you want to buy and rent a house, this site is the best to meet your requests",
+        "frameworks": ["React", "Firebase"]
     },
     {
         "img": "Chat.png",
         "url": "https://chat-gmr.vercel.app",
         "github": "https://github.com/SidouGmr7/ChatGmr",
         "name": "Chat Messenger",
-        "desc": "A chatting app between friends"
+        "desc": "A chatting app between friends",
+        "frameworks": ["React", "Firebase"]
     },
     {
         "img": "FootState.jpg",
         "name": "FootBall State",
-        "desc": "A FootBall Statistics app"
+        "desc": "A FootBall Statistics app",
+        "frameworks": ["React", "NodeJS"]
     }
 ]

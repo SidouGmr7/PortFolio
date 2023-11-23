@@ -3,6 +3,7 @@ import { servicesIcons, skillsIcons } from '../data/icons'
 import { SectionWrapper } from '../components/SectionWrapper'
 
 const Services = () => {
+    const icons = skillsIcons()
     return (
         <>
             <SectionWrapper
@@ -30,12 +31,12 @@ const Services = () => {
                 className='lg:h-screen'
             >
                 <div className='flex flex-wrap p-4 justify-center pt-10'>
-                    {Object.keys(skillsIcons).map((name, index) => (
+                    {Object.keys(icons).map((name, index) => (
                         <ServiceItem
                             title={name}
                             index={index}
                             key={index}
-                            icon={skillsIcons[name]}
+                            icon={icons[name]}
                         />
                     ))}
                 </div>

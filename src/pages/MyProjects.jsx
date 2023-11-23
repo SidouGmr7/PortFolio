@@ -13,7 +13,7 @@ const MyProjects = () => {
             <SectionWrapper id='projectsc' title='Projects Contribution'>
                 <Grid container>
                     {myProjectsContribution.map((itemData, index) => (
-                        <ProjectCart {...itemData} key={index} />
+                        <ProjectCart {...itemData} key={index} contribution />
                     ))}
                 </Grid>
             </SectionWrapper>
@@ -39,10 +39,8 @@ const MyProjects = () => {
                             ? '80%'
                             : '60%'
                         return (
-                            <Grid xs={4} className='md:p-20 p-10'>
-                                <div className='flex justify-center items-center'>
-                                    <img src={title} alt='images' style={{ width: width }} />
-                                </div>
+                            <Grid xs={4} p={{ xl: 10, lg: 5, md: 3, sm: 3, xs: 5 }} align='center'>
+                                <img src={title} alt='images' style={{ width: width }} />
                             </Grid>
                         )
                     })}
