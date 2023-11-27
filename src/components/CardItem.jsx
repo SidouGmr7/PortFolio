@@ -7,9 +7,9 @@ const CardItem = (props) => {
         <Grid
             key={index}
             container
-            lg={about ? 2.4 : 2.4}
+            lg={about ? 2.4 : 2}
             md={about ? 4 : 3}
-            sm={about ? 6 : 4}
+            sm={about ? 6 : 5}
             xs={about ? 6 : 6}
             className='p-4 md:p-6'
         >
@@ -26,7 +26,9 @@ const CardItem = (props) => {
                     title={
                         <p
                             className={`${
-                                !about ? 'text-base md:text-md xl:text-2xl' : 'text-md lg:text-xl xl:text-2xl'
+                                !about
+                                    ? 'text-base md:text-md xl:text-2xl'
+                                    : 'text-md lg:text-xl xl:text-2xl'
                             }`}
                             style={{ color: icon.props.color }}
                         >

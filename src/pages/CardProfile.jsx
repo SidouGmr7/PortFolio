@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import Button from '../components/Button'
 import { SectionWrapper } from '../components/SectionWrapper'
-import Box from '@mui/material/Box'
+import { Box } from '@mui/material'
 
 function Card() {
     return (
@@ -19,10 +19,10 @@ function Card() {
             >
                 <Box sx={{ display: 'grid', justifyItems: 'center' }}>
                     {' '}
-                    <p className='md:text-lg text-sm text-center text-gray-200 lg:m-20'>
-                        I'm a Frontend Web Developer building the Front-end of Websites and Web
-                        Applications that leads to the success of the overall product. Check out
-                        some of my work in the Projects section.
+                    <p className='md:text-lg md:p-0 pb-10 text-sm text-center text-gray-200 lg:m-20'>
+                        I'm a FullStack MERN Web Developer building a Projects that leads to the
+                        success of the overall product. Check out some of my work in the Projects
+                        section.
                         <br />
                         <br />
                         I also like sharing content related to the stuff that I have learned over

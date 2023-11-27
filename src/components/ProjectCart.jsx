@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import 'primeicons/primeicons.css'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Grid, Chip, useMediaQuery ,Box} from '@mui/material'
+import { Grid, Chip, useMediaQuery, Box } from '@mui/material'
 import { FaFirefoxBrowser, FaGithub } from 'react-icons/fa'
 import { Chips } from './Chips'
 
@@ -17,7 +17,7 @@ const ProjectCart = (props) => {
                 animate={{ x: -100, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 onMouseEnter={() => setIsHovered(true)}
-                // onMouseLeave={() => setIsHovered(false)}
+                onMouseLeave={() => setIsHovered(false)}
                 className='transition-all duration-1000 '
             >
                 <div className='rounded-xl relative overflow-hidden group'>
@@ -36,7 +36,7 @@ const ProjectCart = (props) => {
                                             <p className='text-primary uppercase xl:text-2xl lg:text-md text-xs'>
                                                 {name}
                                             </p>
-                                            <div className='hidden xl:block text-gray-300 capitalize text-md mx-auto pt-4'>
+                                            <div className='hidden xl:block text-gray-300 capitalize text-md mx-4 pt-4'>
                                                 {desc}
                                             </div>
                                         </div>
@@ -87,8 +87,8 @@ const ProjectCart = (props) => {
                                             <Box
                                                 sx={{
                                                     position: 'absolute',
-                                                    bottom: { xs: 1, md: 3 },
-                                                    left: { xs: 1, md: 2 },
+                                                    bottom: { xs: 4, md: 5 },
+                                                    left: { xs: 'center', md: 'center' },
                                                 }}
                                             >
                                                 <Chips frameworks={frameworks} />
