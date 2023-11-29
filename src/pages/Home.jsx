@@ -52,7 +52,7 @@ const home = () => {
                         <div className='md:flex '>
                             <a
                                 className='bg-[#6366f1] hover:bg-[#6366f1] md:scale-125 md:hover:scale-150 transition text-white py-2 px-5 justify-center flex rounded-full'
-                                href='https://drive.google.com/file/d/15kM-O1iZscwkszhXc8VgKEvYoMtbMY0K/view?usp=sharing'
+                                href='https://drive.google.com/file/d/1RFFEJGCBYzzY2xyjdzBnhHXrY1vABILf/view?usp=drive_link'
                             >
                                 Download CV
                             </a>
