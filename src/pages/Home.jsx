@@ -1,16 +1,20 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
 import Scroll from '../components/Scroll'
 import { motion } from 'framer-motion'
 import { skillsIcons } from '../data/icons'
-import { Stack } from '@mui/material'
+import { Stack, useMediaQuery, Typography, Box } from '@mui/material'
+import { CV_URL } from '../configs'
 
-const home = () => {
+const Home = () => {
+    const isMobile = useMediaQuery('(max-width: 1200px)')
     const p = (str) => <span className='text-primary'>{str}</span>
     const icons = skillsIcons({ className: 'md:text-[4rem] text-[2rem]' })
     const iconLabel = ['MongoDB', 'Express', 'React', 'NextJS']
+
     return (
-        <div className='bg-fixed h-screen md:p-32 p-20' id='home'>
-            <div className='flex justify-center md:p-0 pb-10'>
+        <div className='bg-fixed xl:h-screen  md:pt-16 p-10' id='home'>
+            <Box className='flex justify-center md:p-0 md:pt-10 pt-16 pb-10'>
                 <Stack direction='row' spacing={1}>
                     {iconLabel.map((fw) => {
                         return (
@@ -22,8 +26,8 @@ const home = () => {
                         )
                     })}
                 </Stack>
-            </div>
-            <div fixed className='flex md:flex-row flex-col items-center'>
+            </Box>
+            <Box fixed className='flex md:flex-row flex-col items-center'>
                 <motion.div
                     initial={{ opacity: 0, x: -400 }}
                     animate={{ opacity: 1, x: 0 }}
@@ -31,32 +35,42 @@ const home = () => {
                     className='md:w-[50%] w-[100%] flex flex-col items-center ml-4 transition duration-1000'
                 >
                     <div className='md:space-x-10 space-y-4'>
-                        <div className='md:text-6xl text-2xl font-bold text-white capitalize space-y-4 md:space-x-10 space-x-2'>
-                            <h1 className='text-4xl'>hey, i'm</h1>
-                            <h1 className='text-4xl'>
-                                {p('G')}oumiri {p('A')}li
-                            </h1>
-                            <h1 className='text-xl'>A {p('MERN')} FullStack focused</h1>
-                            <h1 className='md:text-4xl '>
-                                {p('W')}eb {p('D')}eveloper
-                            </h1>
-                        </div>
-                        <div className='md:text-lg text-sm text-center'>
-                            <p className='text-justify text-gray-200 '>
+                        <Box className='font-bold text-white capitalize space-y-4 space-x-4'>
+                            <Box className='flex justify-center'>
+                                <Typography variant={isMobile ? 'h6' : 'h4'}>
+                                    hey, i'm {p('G')}oumiri {p('A')}li
+                                </Typography>
+                            </Box>
+                            <Box className='flex justify-center'>
+                                <Typography variant={isMobile ? 'h6' : 'h4'}>
+                                    A {p('MERN')} FullStack focused
+                                </Typography>
+                            </Box>
+                            <Box className='flex justify-center'>
+                                <Typography variant={isMobile ? 'h6' : 'h4'}>
+                                    {p('W')}eb {p('D')}eveloper
+                                </Typography>
+                            </Box>
+                        </Box>
+                        <Box className='flex justify-center'>
+                            <Typography
+                                variant={isMobile ? 'caption' : 'subtitle1'}
+                                className='text-justify text-gray-200 '
+                            >
                                 I design and code elegantly simple solutions, and engineer seamless
                                 web applications that seamlessly blend form and function. I am
                                 passionate about creating exceptional digital experiences, and I
                                 genuinely enjoy what I do.
-                            </p>
-                        </div>
-                        <div className='md:flex '>
+                            </Typography>
+                        </Box>
+                        <Box className='md:flex md:justify-center md:pb-10'>
                             <a
-                                className='bg-[#6366f1] hover:bg-[#6366f1] md:scale-125 md:hover:scale-150 transition text-white py-2 px-5 justify-center flex rounded-full'
-                                href='https://drive.google.com/file/d/1RFFEJGCBYzzY2xyjdzBnhHXrY1vABILf/view?usp=drive_link'
+                                className='bg-[#6366f1] hover:bg-[#6366f1] md:scale-125 md:hover:scale-150 transition text-white py-2 px-5 justify-center flex rounded-full cursor-pointer'
+                                onClick={() => window.open(CV_URL)}
                             >
                                 Download CV
                             </a>
-                        </div>
+                        </Box>
                     </div>
                 </motion.div>
                 <motion.div
@@ -73,9 +87,9 @@ const home = () => {
                     />
                 </motion.div>
                 <Scroll selector='#profile' />
-            </div>
+            </Box>
         </div>
     )
 }
 
-export default home
+export default Home

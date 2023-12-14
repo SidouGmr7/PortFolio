@@ -10,7 +10,7 @@ const Services = () => {
                 id='service'
                 title='My Services'
                 selector='#tech'
-                className='lg:h-screen'
+                className='xl:h-screen'
             >
                 <div className='flex flex-wrap p-4 justify-center md:pt-10'>
                     {Object.keys(servicesIcons).map((name, index) => (
@@ -28,7 +28,7 @@ const Services = () => {
                 id='tech'
                 title='Tech I Use'
                 selector='#projectsc'
-                className='lg:h-screen'
+                className='xl:h-screen'
             >
                 <div className='flex flex-wrap p-4 justify-center pt-10'>
                     {Object.keys(icons).map((name, index) => (

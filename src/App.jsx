@@ -14,6 +14,9 @@ const theme = createTheme({
             main: '#6366f1',
         },
     },
+    typography: {
+        fontFamily: 'Montserrat, sans-serif !important',
+    },
 })
 
 function App() {
