@@ -18,8 +18,7 @@ function Card() {
                 whileInView={{ x: 0, opacity: 1 }}
             >
                 <Box sx={{ display: 'grid', justifyItems: 'center' }}>
-                    {' '}
-                    <p className='md:text-lg md:p-0 pb-10 text-sm text-center text-gray-200 lg:m-20'>
+                    <p className='2xl:text-lg md:p-0 pb-10 text-sm text-center text-gray-200 md:m-10'>
                         I'm a FullStack MERN Web Developer building a Projects that leads to the
                         success of the overall product. Check out some of my work in the Projects
                         section.

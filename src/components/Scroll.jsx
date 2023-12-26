@@ -3,7 +3,7 @@ import { FaChevronDown } from "react-icons/fa"
 
 const Scroll = ({ selector }) => {
   return (
-    <ScrollIntoView selector={selector} className='absolute inset-x-0 bottom-0 hidden md:flex cursor-pointer'>
+    <ScrollIntoView selector={selector} className='absolute inset-x-0 bottom-0 hidden xl:flex cursor-pointer'>
       <div className='mx-auto pb-0'>
         <FaChevronDown className='animate-bounce mx-auto text-4xl text-primary' />
       </div>

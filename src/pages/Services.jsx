@@ -28,16 +28,11 @@ const Services = () => {
                 id='tech'
                 title='Tech I Use'
                 selector='#projectsc'
-                className='xl:h-screen'
+                className='xl:h-screen '
             >
-                <div className='flex flex-wrap p-4 justify-center pt-10'>
+                <div className='flex flex-wrap p-4 justify-center'>
                     {Object.keys(icons).map((name, index) => (
-                        <ServiceItem
-                            title={name}
-                            index={index}
-                            key={index}
-                            icon={icons[name]}
-                        />
+                        <ServiceItem title={name} index={index} key={index} icon={icons[name]} />
                     ))}
                 </div>
             </SectionWrapper>

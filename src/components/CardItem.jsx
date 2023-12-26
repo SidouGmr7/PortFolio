@@ -27,8 +27,8 @@ const CardItem = (props) => {
                         <p
                             className={`${
                                 !about
-                                    ? 'text-base md:text-md xl:text-2xl'
-                                    : 'text-md lg:text-xl xl:text-2xl'
+                                    ? 'text-base md:text-md 2xl:text-2xl'
+                                    : 'text-md lg:text-xl 2xl:text-2xl'
                             }`}
                             style={{ color: icon.props.color }}
                         >
@@ -40,7 +40,7 @@ const CardItem = (props) => {
                     } font-semibold`}
                 />
                 {!!about && (
-                    <CardContent className='text-xs lg:text-md xl:text-lg text-gray-200 text-center m-0'>
+                    <CardContent className='text-xs lg:text-md 2xl:text-lg text-gray-200 text-center m-0'>
                         {about}
                     </CardContent>
                 )}
