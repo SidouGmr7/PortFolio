@@ -31,15 +31,16 @@ const MyProjects = () => {
             >
                 <Grid container className='lg:px-48'>
                     {img.map((title, index) => {
-                        const width = isMobile
-                            ? index < 3
-                                ? '100%'
-                                : ''
-                            : index > 2
-                            ? '80%'
-                            : '60%'
+                        const width = isMobile ? '100%' : index > 2 ? '80%' : '60%'
                         return (
-                            <Grid xs={4} p={{ xl: 10, lg: 5, md: 3, sm: 3, xs: 5 }} align='center'>
+                            <Grid
+                                xs={4}
+                                p={{ xl: 10, lg: 5, md: 3, sm: 3, xs: 5 }}
+                                align='center'
+                                justifyContent='center'
+                                alignItems='center'
+                                style={{ display: 'flex' }}
+                            >
                                 <img src={title} alt='images' style={{ width: width }} />
                             </Grid>
                         )
