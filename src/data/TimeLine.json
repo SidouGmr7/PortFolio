@@ -18,13 +18,20 @@
         "date": "2021 - 2022",
         "icon": "pi pi-desktop",
         "color": "#673AB7",
-        "text": "Developed a web application for data management and decision support in investment control using Artificial Intelligence."
+        "text": "Developed an AI-powered web application for data management and decision support in investment control."
     },
     {
         "status": "Front-End Web Developer",
-        "date": "2022 - 2023",
+        "date": "2022 - 2024",
         "icon": "pi pi-briefcase",
         "color": "#FF9800",
-        "text": "I worked as a front-end developer for one year and three months, contributing to numerous projects."
+        "text": "I worked as a front-end developer, making significant contributions to numerous projects in medialem."
+    },
+    {
+        "status": "Full-Stack Web Developer",
+        "date": "2024 - present",
+        "icon": "pi pi-briefcase",
+        "color": "#FF9800",
+        "text": "As a full-stack developer, I contributed to the development of an AI-powered legal search web chat application."
     }
 ]
