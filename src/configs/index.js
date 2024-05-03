@@ -1,1 +1,0 @@
-export const CV_URL = 'https://drive.google.com/file/d/1RFFEJGCBYzzY2xyjdzBnhHXrY1vABILf/view?usp=drive_link'
