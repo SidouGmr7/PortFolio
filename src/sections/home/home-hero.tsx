@@ -2,9 +2,7 @@ import { m, useScroll } from 'framer-motion';
 import { useRef, useState, useEffect, useCallback } from 'react';
 
 import Box from '@mui/material/Box';
-import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
-import Rating from '@mui/material/Rating';
 import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Unstable_Grid2';
@@ -189,8 +187,7 @@ export default function HomeHero() {
             textAlign: 'center',
           }}
         >
-          Start a <br />
-          New Project with
+          hey, i m Goumiri Ali <br />A MERN FullStack
         </Typography>
       </m.div>
 
@@ -204,37 +201,20 @@ export default function HomeHero() {
             repeat: Infinity,
           }}
         >
-          Minimal
+          Web Developer
         </StyledTextGradient>
       </m.div>
 
       <m.div variants={varFade().in}>
         <Typography variant="body2" sx={{ textAlign: 'center' }}>
-          The starting point for your next project is based on MUI.Easy customization Helps you
-          build apps faster and better.
+          I design and code elegantly simple solutions, and engineer seamless web applications that
+          seamlessly blend form and function. I am passionate about creating exceptional digital
+          experiences, and I genuinely enjoy what I do.
         </Typography>
       </m.div>
 
       <m.div variants={varFade().in}>
-        <Stack
-          spacing={0.75}
-          direction="row"
-          alignItems="center"
-          justifyContent="center"
-          sx={{ my: 3 }}
-        >
-          <Rating readOnly value={4.95} precision={0.1} max={5} />
-          <Typography variant="caption" sx={{ color: 'text.secondary' }}>
-            <Box component="strong" sx={{ mr: 0.5, color: 'text.primary' }}>
-              4.96/5
-            </Box>
-            (99+ reviews)
-          </Typography>
-        </Stack>
-      </m.div>
-
-      <m.div variants={varFade().in}>
-        <Stack spacing={1.5} direction={{ xs: 'column-reverse', sm: 'row' }} sx={{ mb: 5 }}>
+        <Stack spacing={1.5} direction={{ xs: 'column-reverse', sm: 'row' }} my={3}>
           <Stack alignItems="center" spacing={2}>
             <Button
               component={RouterLink}
@@ -244,24 +224,8 @@ export default function HomeHero() {
               variant="contained"
               startIcon={<Iconify icon="eva:flash-fill" width={24} />}
             >
-              Live Preview
+              Download CV
             </Button>
-
-            <Link
-              color="inherit"
-              variant="caption"
-              target="_blank"
-              rel="noopener"
-              href={paths.freeUI}
-              sx={{
-                textDecoration: 'underline',
-                display: 'inline-flex',
-                alignItems: 'center',
-              }}
-            >
-              <Iconify icon="eva:external-link-fill" width={16} sx={{ mr: 0.5 }} />
-              Get Free Version
-            </Link>
           </Stack>
 
           <Button
@@ -274,12 +238,12 @@ export default function HomeHero() {
             href={paths.figma}
             sx={{ borderColor: 'text.primary' }}
           >
-            Design Preview
+            Contact Me
           </Button>
         </Stack>
       </m.div>
 
-      <Stack spacing={3} sx={{ textAlign: 'center' }}>
+      {/* <Stack spacing={3} sx={{ textAlign: 'center' }}>
         <m.div variants={varFade().in}>
           <Typography variant="overline" sx={{ opacity: 0.48 }}>
             Available For
@@ -298,7 +262,7 @@ export default function HomeHero() {
             </m.div>
           ))}
         </Stack>
-      </Stack>
+      </Stack> */}
     </Stack>
   );
 
