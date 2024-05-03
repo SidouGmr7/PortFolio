@@ -1,38 +1,39 @@
-import { m } from 'framer-motion';
+import { m } from 'framer-motion'
 
-import Box from '@mui/material/Box';
-import Card from '@mui/material/Card';
-import Stack from '@mui/material/Stack';
-import { alpha } from '@mui/material/styles';
-import Container from '@mui/material/Container';
-import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box'
+import Card from '@mui/material/Card'
+import Stack from '@mui/material/Stack'
+import { alpha } from '@mui/material/styles'
+import Container from '@mui/material/Container'
+import Typography from '@mui/material/Typography'
 
-import { varFade, MotionViewport } from 'src/components/animate';
+import { varFade, MotionViewport } from 'src/components/animate'
 
 // ----------------------------------------------------------------------
 
 const CARDS = [
   {
     icon: ' /assets/icons/home/ic_make_brand.svg',
-    title: 'Branding',
-    description: 'Consistent design makes it easy to brand your own.',
+    title: 'DataBases',
+    description: 'Manage DataBase (Sql,noSql) with MongoDB, Firestore, Mysql.',
+  },
+  {
+    icon: ' /assets/icons/home/ic_development.svg',
+    title: 'Developmen',
+    description:
+      'Create Web App using React or Angular, and NodeJS framework and using NextJS for SSR, saving you time and money.',
   },
   {
     icon: ' /assets/icons/home/ic_design.svg',
     title: 'UI & UX Design',
     description:
-      'The kit is built on the principles of the atomic design system. It helps you to create projects fastest and easily customized packages for your projects.',
+      'Design Web Application. It helps you to create projects fastest and easily for your projects.',
   },
-  {
-    icon: ' /assets/icons/home/ic_development.svg',
-    title: 'Development',
-    description: 'Easy to customize and extend, saving you time and money.',
-  },
-];
+]
 
 // ----------------------------------------------------------------------
 
-export default function HomeMinimal() {
+export default function HomeServices() {
   return (
     <Container
       component={MotionViewport}
@@ -47,16 +48,8 @@ export default function HomeMinimal() {
           mb: { xs: 5, md: 10 },
         }}
       >
-        <m.div variants={varFade().inUp}>
-          <Typography component="div" variant="overline" sx={{ color: 'text.disabled' }}>
-            Minimal UI
-          </Typography>
-        </m.div>
-
         <m.div variants={varFade().inDown}>
-          <Typography variant="h2">
-            What Minimal <br /> helps you?
-          </Typography>
+          <Typography variant="h2">My Services</Typography>
         </m.div>
       </Stack>
 
@@ -105,5 +98,5 @@ export default function HomeMinimal() {
         ))}
       </Box>
     </Container>
-  );
+  )
 }

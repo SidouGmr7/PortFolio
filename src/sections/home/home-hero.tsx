@@ -1,24 +1,24 @@
-import { m, useScroll } from 'framer-motion';
-import { useRef, useState, useEffect, useCallback } from 'react';
+import { m, useScroll } from 'framer-motion'
+import { useRef, useState, useEffect, useCallback } from 'react'
 
-import Box from '@mui/material/Box';
-import Stack from '@mui/material/Stack';
-import Button from '@mui/material/Button';
-import Container from '@mui/material/Container';
-import Grid from '@mui/material/Unstable_Grid2';
-import Typography from '@mui/material/Typography';
-import { alpha, styled, useTheme } from '@mui/material/styles';
+import Box from '@mui/material/Box'
+import Stack from '@mui/material/Stack'
+import Button from '@mui/material/Button'
+import Container from '@mui/material/Container'
+import Grid from '@mui/material/Unstable_Grid2'
+import Typography from '@mui/material/Typography'
+import { alpha, styled, useTheme } from '@mui/material/styles'
 
-import { paths } from 'src/routes/paths';
-import { RouterLink } from 'src/routes/components';
+import { paths } from 'src/routes/paths'
+import { RouterLink } from 'src/routes/components'
 
-import { useResponsive } from 'src/hooks/use-responsive';
+import { useResponsive } from 'src/hooks/use-responsive'
 
-import { HEADER } from 'src/layouts/config-layout';
-import { bgBlur, bgGradient, textGradient } from 'src/theme/css';
+import { HEADER } from 'src/layouts/config-layout'
+import { bgBlur, bgGradient, textGradient } from 'src/theme/css'
 
-import Iconify from 'src/components/iconify';
-import { varFade, MotionContainer } from 'src/components/animate';
+import Iconify from 'src/components/iconify'
+import { varFade, MotionContainer } from 'src/components/animate'
 
 // ----------------------------------------------------------------------
 
@@ -35,7 +35,7 @@ const StyledRoot = styled('div')(({ theme }) => ({
     left: 0,
     position: 'fixed',
   },
-}));
+}))
 
 const StyledWrapper = styled('div')(({ theme }) => ({
   height: '100%',
@@ -44,7 +44,7 @@ const StyledWrapper = styled('div')(({ theme }) => ({
   [theme.breakpoints.up('md')]: {
     marginTop: HEADER.H_DESKTOP_OFFSET,
   },
-}));
+}))
 
 const StyledTextGradient = styled(m.h1)(({ theme }) => ({
   ...textGradient(
@@ -63,7 +63,7 @@ const StyledTextGradient = styled(m.h1)(({ theme }) => ({
   [theme.breakpoints.up('md')]: {
     fontSize: `${96 / 16}rem`,
   },
-}));
+}))
 
 const StyledEllipseTop = styled('div')(({ theme }) => ({
   top: -80,
@@ -75,7 +75,7 @@ const StyledEllipseTop = styled('div')(({ theme }) => ({
   filter: 'blur(100px)',
   WebkitFilter: 'blur(100px)',
   backgroundColor: alpha(theme.palette.primary.darker, 0.12),
-}));
+}))
 
 const StyledEllipseBottom = styled('div')(({ theme }) => ({
   height: 400,
@@ -87,12 +87,12 @@ const StyledEllipseBottom = styled('div')(({ theme }) => ({
   filter: 'blur(100px)',
   WebkitFilter: 'blur(100px)',
   backgroundColor: alpha(theme.palette.primary.darker, 0.12),
-}));
+}))
 
 type StyledPolygonProps = {
-  opacity?: number;
-  anchor?: 'left' | 'right';
-};
+  opacity?: number
+  anchor?: 'left' | 'right'
+}
 
 const StyledPolygon = styled('div')<StyledPolygonProps>(
   ({ opacity = 1, anchor = 'left', theme }) => ({
@@ -120,51 +120,51 @@ const StyledPolygon = styled('div')<StyledPolygonProps>(
       }),
     }),
   })
-);
+)
 
 // ----------------------------------------------------------------------
 
 export default function HomeHero() {
-  const mdUp = useResponsive('up', 'md');
+  const mdUp = useResponsive('up', 'md')
 
-  const theme = useTheme();
+  const theme = useTheme()
 
-  const heroRef = useRef<HTMLDivElement | null>(null);
+  const heroRef = useRef<HTMLDivElement | null>(null)
 
-  const { scrollY } = useScroll();
+  const { scrollY } = useScroll()
 
-  const [percent, setPercent] = useState(0);
+  const [percent, setPercent] = useState(0)
 
-  const lightMode = theme.palette.mode === 'light';
+  const lightMode = theme.palette.mode === 'light'
 
   const getScroll = useCallback(() => {
-    let heroHeight = 0;
+    let heroHeight = 0
 
     if (heroRef.current) {
-      heroHeight = heroRef.current.offsetHeight;
+      heroHeight = heroRef.current.offsetHeight
     }
 
     scrollY.on('change', (scrollHeight) => {
-      const scrollPercent = (scrollHeight * 100) / heroHeight;
+      const scrollPercent = (scrollHeight * 100) / heroHeight
 
-      setPercent(Math.floor(scrollPercent));
-    });
-  }, [scrollY]);
+      setPercent(Math.floor(scrollPercent))
+    })
+  }, [scrollY])
 
   useEffect(() => {
-    getScroll();
-  }, [getScroll]);
+    getScroll()
+  }, [getScroll])
 
   const transition = {
     repeatType: 'loop',
     ease: 'linear',
     duration: 60 * 4,
     repeat: Infinity,
-  } as const;
+  } as const
 
-  const opacity = 1 - percent / 100;
+  const opacity = 1 - percent / 100
 
-  const hide = percent > 120;
+  const hide = percent > 120
 
   const renderDescription = (
     <Stack
@@ -264,7 +264,7 @@ export default function HomeHero() {
         </Stack>
       </Stack> */}
     </Stack>
-  );
+  )
 
   const renderSlides = (
     <Stack
@@ -345,7 +345,7 @@ export default function HomeHero() {
         />
       </Stack>
     </Stack>
-  );
+  )
 
   const renderPolygons = (
     <>
@@ -354,14 +354,14 @@ export default function HomeHero() {
       <StyledPolygon anchor="right" opacity={0.48} sx={{ height: 48, zIndex: 10 }} />
       <StyledPolygon anchor="right" sx={{ zIndex: 11, height: 24 }} />
     </>
-  );
+  )
 
   const renderEllipses = (
     <>
       {mdUp && <StyledEllipseTop />}
       <StyledEllipseBottom />
     </>
-  );
+  )
 
   return (
     <>
@@ -392,5 +392,5 @@ export default function HomeHero() {
 
       <Box sx={{ height: { md: '100vh' } }} />
     </>
-  );
+  )
 }

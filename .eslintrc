@@ -4,18 +4,8 @@
     "browser": true,
     "es2021": true
   },
-  "plugins": [
-    "perfectionist",
-    "unused-imports",
-    "@typescript-eslint",
-    "prettier"
-  ],
-  "extends": [
-    "airbnb",
-    "airbnb-typescript",
-    "airbnb/hooks",
-    "prettier"
-  ],
+  "plugins": ["perfectionist", "unused-imports", "@typescript-eslint", "prettier"],
+  "extends": ["airbnb", "airbnb-typescript", "airbnb/hooks", "prettier"],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": "latest",
@@ -51,6 +41,18 @@
     "react/function-component-definition": 0,
     "@typescript-eslint/naming-convention": 0,
     "jsx-a11y/control-has-associated-label": 0,
+    "import/no-cycle": "off",
+    "@typescript-eslint/no-unused-expressions": "off",
+    "import/no-extraneous-dependencies": [
+      "off",
+      { "devDependencies": false, "optionalDependencies": false, "peerDependencies": false }
+    ],
+    "react-hooks/exhaustive-deps": [
+      "warn",
+      {
+        "additionalHooks": "(useMyCustomHook)" // Add any custom hooks here
+      }
+    ],
     "@typescript-eslint/no-use-before-define": 0,
     "react/jsx-no-useless-fragment": [
       1,
@@ -87,7 +89,7 @@
     // https://www.npmjs.com/package/eslint-plugin-unused-imports
     "unused-imports/no-unused-imports": 1,
     "unused-imports/no-unused-vars": [
-      0,
+      1,
       {
         "vars": "all",
         "varsIgnorePattern": "^_",
@@ -125,10 +127,7 @@
         "type": "line-length",
         "newlines-between": "always",
         "groups": [
-          [
-            "builtin",
-            "external"
-          ],
+          ["builtin", "external"],
           "custom-mui",
           "custom-routes",
           "custom-hooks",
@@ -137,11 +136,7 @@
           "custom-components",
           "custom-sections",
           "custom-types",
-          [
-            "parent",
-            "sibling",
-            "index"
-          ],
+          ["parent", "sibling", "index"],
           "object",
           "unknown"
         ],
@@ -156,9 +151,7 @@
             "custom-types": "src/types/**"
           }
         },
-        "internal-pattern": [
-          "src/**"
-        ]
+        "internal-pattern": ["src/**"]
       }
     ]
   }
