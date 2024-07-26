@@ -7,7 +7,7 @@ import Button from '@mui/material/Button'
 import Container from '@mui/material/Container'
 import Grid from '@mui/material/Unstable_Grid2'
 import Typography from '@mui/material/Typography'
-import { alpha, styled, useTheme } from '@mui/material/styles'
+import { alpha, styled } from '@mui/material/styles'
 
 import { paths } from 'src/routes/paths'
 import { RouterLink } from 'src/routes/components'
@@ -58,10 +58,10 @@ const StyledTextGradient = styled(m.h1)(({ theme }) => ({
   letterSpacing: 8,
   textAlign: 'center',
   backgroundSize: '400%',
-  fontSize: `${64 / 16}rem`,
+  fontSize: `${64 / 24}rem`,
   fontFamily: theme.typography.fontSecondaryFamily,
   [theme.breakpoints.up('md')]: {
-    fontSize: `${96 / 16}rem`,
+    fontSize: `${96 / 22}rem`,
   },
 }))
 
@@ -127,15 +127,11 @@ const StyledPolygon = styled('div')<StyledPolygonProps>(
 export default function HomeHero() {
   const mdUp = useResponsive('up', 'md')
 
-  const theme = useTheme()
-
   const heroRef = useRef<HTMLDivElement | null>(null)
 
   const { scrollY } = useScroll()
 
   const [percent, setPercent] = useState(0)
-
-  const lightMode = theme.palette.mode === 'light'
 
   const getScroll = useCallback(() => {
     let heroHeight = 0
@@ -155,13 +151,6 @@ export default function HomeHero() {
     getScroll()
   }, [getScroll])
 
-  const transition = {
-    repeatType: 'loop',
-    ease: 'linear',
-    duration: 60 * 4,
-    repeat: Infinity,
-  } as const
-
   const opacity = 1 - percent / 100
 
   const hide = percent > 120
@@ -173,24 +162,11 @@ export default function HomeHero() {
       sx={{
         height: 1,
         mx: 'auto',
-        maxWidth: 480,
+        maxWidth: 800,
         opacity: opacity > 0 ? opacity : 0,
-        mt: {
-          md: `-${HEADER.H_DESKTOP + percent * 2.5}px`,
-        },
+        mt: { md: `-${HEADER.H_DESKTOP + percent * 2.5}px` },
       }}
     >
-      <m.div variants={varFade().in}>
-        <Typography
-          variant="h2"
-          sx={{
-            textAlign: 'center',
-          }}
-        >
-          hey, i m Goumiri Ali <br />A MERN FullStack
-        </Typography>
-      </m.div>
-
       <m.div variants={varFade().in}>
         <StyledTextGradient
           animate={{ backgroundPosition: '200% center' }}
@@ -201,6 +177,9 @@ export default function HomeHero() {
             repeat: Infinity,
           }}
         >
+          Hey, i m Goumiri Ali
+          <br />A MERN FullStack
+          <br />
           Web Developer
         </StyledTextGradient>
       </m.div>
@@ -266,87 +245,6 @@ export default function HomeHero() {
     </Stack>
   )
 
-  const renderSlides = (
-    <Stack
-      direction="row"
-      alignItems="flex-start"
-      sx={{
-        height: '150%',
-        position: 'absolute',
-        opacity: opacity > 0 ? opacity : 0,
-        transform: `skew(${-16 - percent / 24}deg, ${4 - percent / 16}deg)`,
-        ...(theme.direction === 'rtl' && {
-          transform: `skew(${16 + percent / 24}deg, ${4 + percent / 16}deg)`,
-        }),
-      }}
-    >
-      <Stack
-        component={m.div}
-        variants={varFade().in}
-        sx={{
-          width: 344,
-          position: 'relative',
-        }}
-      >
-        <Box
-          component={m.img}
-          animate={{ y: ['0%', '100%'] }}
-          transition={transition}
-          alt={lightMode ? 'light_1' : 'dark_1'}
-          src={
-            lightMode
-              ? `/assets/images/home/hero/light_1.webp`
-              : `/assets/images/home/hero/dark_1.webp`
-          }
-          sx={{ position: 'absolute', mt: -5 }}
-        />
-        <Box
-          component={m.img}
-          animate={{ y: ['-100%', '0%'] }}
-          transition={transition}
-          alt={lightMode ? 'light_1' : 'dark_1'}
-          src={
-            lightMode
-              ? `/assets/images/home/hero/light_1.webp`
-              : `/assets/images/home/hero/dark_1.webp`
-          }
-          sx={{ position: 'absolute' }}
-        />
-      </Stack>
-
-      <Stack
-        component={m.div}
-        variants={varFade().in}
-        sx={{ width: 720, position: 'relative', ml: -5 }}
-      >
-        <Box
-          component={m.img}
-          animate={{ y: ['100%', '0%'] }}
-          transition={transition}
-          alt={lightMode ? 'light_2' : 'dark_2'}
-          src={
-            lightMode
-              ? `/assets/images/home/hero/light_2.webp`
-              : `/assets/images/home/hero/dark_2.webp`
-          }
-          sx={{ position: 'absolute', mt: -5 }}
-        />
-        <Box
-          component={m.img}
-          animate={{ y: ['0%', '-100%'] }}
-          transition={transition}
-          alt={lightMode ? 'light_2' : 'dark_2'}
-          src={
-            lightMode
-              ? `/assets/images/home/hero/light_2.webp`
-              : `/assets/images/home/hero/dark_2.webp`
-          }
-          sx={{ position: 'absolute' }}
-        />
-      </Stack>
-    </Stack>
-  )
-
   const renderPolygons = (
     <>
       <StyledPolygon />
@@ -375,12 +273,10 @@ export default function HomeHero() {
       >
         <StyledWrapper>
           <Container component={MotionContainer} sx={{ height: 1 }}>
-            <Grid container columnSpacing={{ md: 10 }} sx={{ height: 1 }}>
-              <Grid xs={12} md={6}>
+            <Grid container sx={{ height: 1 }}>
+              <Grid xs={12} md={12}>
                 {renderDescription}
               </Grid>
-
-              {mdUp && <Grid md={6}>{renderSlides}</Grid>}
             </Grid>
           </Container>
 
